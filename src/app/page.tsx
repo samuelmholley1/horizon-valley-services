@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -82,7 +83,7 @@ export default function Home() {
             <h3 className="text-4xl font-bold text-horizon-black mb-6">Our Services</h3>
             <p className="text-lg text-horizon-slate max-w-2xl mx-auto leading-relaxed">
               We provide comprehensive exterior cleaning and maintenance solutions for residential and commercial properties 
-              throughout Mendocino's beautiful valleys.
+              throughout Mendocino&#39;s beautiful valleys.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -188,7 +189,7 @@ export default function Home() {
           <h3 className="text-4xl font-bold text-horizon-black mb-6">Get In Touch</h3>
           <p className="text-lg mb-12 text-horizon-slate max-w-2xl mx-auto leading-relaxed">
             Ready to enhance your property? Contact us for a free consultation and competitive quote. 
-            We're here to serve our local community.
+            We&#39;re here to serve our local community.
           </p>
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100">
