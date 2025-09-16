@@ -56,10 +56,10 @@ export default function Home() {
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
             Professional Exterior<br />
-            <span className="text-horizon-warm">Cleaning & Maintenance</span>
+            <span className="text-horizon-warm">Cleaning &amp; Maintenance</span>
           </h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto text-gray-300 leading-relaxed">
-            Serving the heart of Northern California's wine country with reliable, professional exterior 
+            Serving the heart of Northern California&#39;s wine country with reliable, professional exterior 
             cleaning and maintenance services. Your trusted local experts in Ukiah and surrounding valleys.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -163,7 +163,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
           <h3 className="text-4xl font-bold mb-6">Our Service Areas</h3>
           <p className="text-lg mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Proudly serving the beautiful valleys and communities throughout Northern California's wine country
+            Proudly serving the beautiful valleys and communities throughout Northern California&#39;s wine country
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-horizon-white/10 backdrop-blur-sm p-8 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
@@ -259,7 +259,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-2">Horizon Valley Services LLC</h2>
           </div>
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-            Professional exterior cleaning and maintenance services proudly serving Northern California's wine country
+            Professional exterior cleaning and maintenance services proudly serving Northern California&#39;s wine country
           </p>
           <div className="border-t border-gray-600 pt-6">
             <p className="text-gray-500 text-sm">
