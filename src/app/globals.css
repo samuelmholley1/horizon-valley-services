@@ -16,4 +16,46 @@
   a, button {
     @apply transition-all duration-300;
   }
+
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Improve touch targets for mobile (Apple & Google guidelines) */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Better image loading state */
+  img {
+    background-color: #f5f5f4;
+  }
+
+  /* Prevent text overflow */
+  * {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Fix landscape mode on mobile */
+  @media (max-height: 500px) and (orientation: landscape) {
+    .mobile-menu {
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+  }
+
+  /* Improve print styles */
+  @media print {
+    nav, footer {
+      display: none;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+  }
 }

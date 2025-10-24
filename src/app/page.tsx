@@ -333,10 +333,10 @@ export default function Home() {
                 Yes! We provide free, no-obligation quotes for all our services. You can schedule a consultation through our website or call us directly.
               </p>
             </div>
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
-              <h4 className="text-xl font-semibold text-horizon-black mb-3">Are you licensed and insured?</h4>
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+              <h4 className="text-xl font-semibold text-horizon-black mb-3">What safety measures do you follow?</h4>
               <p className="text-horizon-slate leading-relaxed">
-                Absolutely. We are fully licensed and insured to protect both our team and your property. Your peace of mind is our priority.
+                We prioritize safety and professionalism on every job. Our team follows industry best practices and takes care to protect your property throughout the service process.
               </p>
             </div>
             <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
@@ -476,7 +476,7 @@ export default function Home() {
 
           <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-gray-500 text-sm">
-              © 2025 Horizon Valley Services LLC. All rights reserved. | Licensed & Insured
+              © 2025 Horizon Valley Services LLC. All rights reserved.
             </p>
           </div>
         </div>
@@ -659,10 +659,10 @@ export default function Home() {
               },
               {
                 "@type": "Question",
-                "name": "Are you licensed and insured?",
+                "name": "What safety measures do you follow?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Absolutely. Horizon Valley Services is fully licensed and insured for your protection and peace of mind."
+                  "text": "We prioritize safety and professionalism on every job. Our team follows industry best practices and takes care to protect your property throughout the service process."
                 }
               },
               {

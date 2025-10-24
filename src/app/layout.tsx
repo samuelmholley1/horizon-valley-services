@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   creator: 'Horizon Valley Services LLC',
   publisher: 'Horizon Valley Services LLC',
   metadataBase: new URL('https://horizonvalleycleaning.com'),
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
   alternates: {
     canonical: '/',
   },

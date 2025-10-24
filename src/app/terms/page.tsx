@@ -96,9 +96,9 @@ export default function TermsPage() {
           </div>
 
           <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 mb-8">
-            <h2 className="text-2xl font-bold text-horizon-black mb-4">Liability and Insurance</h2>
+            <h3 className="text-2xl font-bold text-horizon-black mb-4">5. Liability & Insurance</h3>
             <p className="text-horizon-slate leading-relaxed mb-4">
-              Horizon Valley Services LLC is fully licensed and insured. We take great care in performing our services, but we are not liable for:
+              Horizon Valley Services LLC takes great care in performing our services, but we are not liable for:
             </p>
             <ul className="list-disc list-inside text-horizon-slate space-y-2 mb-4">
               <li>Pre-existing damage or defects not disclosed prior to service</li>
