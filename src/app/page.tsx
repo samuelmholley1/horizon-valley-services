@@ -1,8 +1,11 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <main className="min-h-screen bg-horizon-cream">
       {/* Navigation */}
@@ -31,13 +34,58 @@ export default function Home() {
               <a href="#contact" className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors">Contact</a>
             </div>
             <div className="md:hidden">
-              <button className="text-horizon-charcoal hover:text-horizon-black">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+              <button 
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-horizon-charcoal hover:text-horizon-black p-2"
+                aria-label="Toggle menu"
+              >
+                {mobileMenuOpen ? (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
+          
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden py-4 border-t border-gray-200">
+              <div className="flex flex-col space-y-4">
+                <a 
+                  href="#services" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors px-4 py-2"
+                >
+                  Services
+                </a>
+                <a 
+                  href="#team" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors px-4 py-2"
+                >
+                  Team
+                </a>
+                <a 
+                  href="#contact" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors px-4 py-2"
+                >
+                  Contact
+                </a>
+                <a 
+                  href="tel:559-960-2749"
+                  className="bg-horizon-black text-horizon-white px-6 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300 text-center mx-4"
+                >
+                  Call (559) 960-2749
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -64,12 +112,18 @@ export default function Home() {
             cleaning and maintenance services. Your trusted local experts in Ukiah and surrounding valleys.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-horizon-white text-horizon-black px-8 py-4 rounded-lg font-semibold hover:bg-horizon-warm transition duration-300 shadow-lg">
-              Get Free Quote
-            </button>
-            <button className="border-2 border-horizon-white text-horizon-white px-8 py-4 rounded-lg font-semibold hover:bg-horizon-white hover:text-horizon-black transition duration-300">
-              Learn More
-            </button>
+            <a 
+              href="tel:559-960-2749" 
+              className="bg-horizon-white text-horizon-black px-8 py-4 rounded-lg font-semibold hover:bg-horizon-warm transition duration-300 shadow-lg text-center"
+            >
+              Call (559) 960-2749
+            </a>
+            <a 
+              href="mailto:owners@horizonvalleycleaning.com"
+              className="border-2 border-horizon-white text-horizon-white px-8 py-4 rounded-lg font-semibold hover:bg-horizon-white hover:text-horizon-black transition duration-300 text-center"
+            >
+              Email Us
+            </a>
           </div>
         </div>
         {/* Decorative elements */}
@@ -203,7 +257,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-horizon-black font-medium">Call for quote</p>
-                    <p className="text-horizon-slate">(555) 123-4567</p>
+                    <a href="tel:559-960-2749" className="text-horizon-slate hover:text-horizon-black transition-colors">(559) 960-2749</a>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -214,7 +268,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-horizon-black font-medium">Email us</p>
-                    <p className="text-horizon-slate">info@horizonvalleyservices.com</p>
+                    <a href="mailto:owners@horizonvalleycleaning.com" className="text-horizon-slate hover:text-horizon-black transition-colors">owners@horizonvalleycleaning.com</a>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -237,9 +291,12 @@ export default function Home() {
                 Fill out our online form or give us a call to discuss your exterior cleaning and maintenance needs. 
                 We provide free consultations and competitive pricing for all our services.
               </p>
-              <button className="w-full bg-horizon-black text-horizon-white px-6 py-4 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300 shadow-lg">
-                Get Free Quote
-              </button>
+              <a 
+                href="tel:559-960-2749"
+                className="block w-full bg-horizon-black text-horizon-white px-6 py-4 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300 shadow-lg text-center"
+              >
+                Call (559) 960-2749 for Quote
+              </a>
             </div>
           </div>
         </div>
