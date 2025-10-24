@@ -21,13 +21,14 @@ export default function Header() {
                 className="object-contain"
               />
             </div>
-            <div className="h-8 relative flex-shrink-0">
-              <img 
-                src="/HV_logo_text.png" 
-                alt="Horizon Valley Services" 
-                className="h-full w-auto object-contain"
-              />
-            </div>
+            <Image 
+              src="/HV_logo_text.png" 
+              alt="Horizon Valley Services" 
+              width={200}
+              height={32}
+              className="h-8 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
