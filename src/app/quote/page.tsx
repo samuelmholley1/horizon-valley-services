@@ -34,23 +34,43 @@ export default function QuotePage() {
       const embedDiv = document.getElementById('calendly-embed')
       
       if (skeleton && embedDiv) {
-        // Poll for iframe to load and wait for content to be ready
-        const poll = () => {
+        // Poll for iframe and wait for it to have substantial height (Calendly loaded)
+        let checkCount = 0
+        const maxChecks = 100 // Max 10 seconds (100 * 100ms)
+        
+        const checkCalendlyReady = () => {
           const iframe = embedDiv.querySelector('iframe')
+          
           if (!iframe) {
-            requestAnimationFrame(poll)
+            if (checkCount < maxChecks) {
+              checkCount++
+              setTimeout(checkCalendlyReady, 100)
+            }
             return
           }
           
-          // Wait for iframe to fully load, then add delay for Calendly to render
-          iframe.addEventListener('load', () => {
-            // Wait 1.5 seconds after iframe loads to ensure Calendly content is fully rendered
+          // Check if iframe has substantial height (indicates Calendly content is loaded)
+          const iframeHeight = iframe.offsetHeight
+          
+          if (iframeHeight > 500) {
+            // Calendly is ready!
+            embedDiv.classList.add('calendly-loaded')
+            // Small delay for smooth transition
             setTimeout(() => {
               skeleton.remove()
-            }, 1500)
-          })
+            }, 300)
+          } else if (checkCount < maxChecks) {
+            // Keep checking
+            checkCount++
+            setTimeout(checkCalendlyReady, 100)
+          } else {
+            // Timeout fallback
+            embedDiv.classList.add('calendly-loaded')
+            skeleton.remove()
+          }
         }
-        poll()
+        
+        checkCalendlyReady()
       }
     }
 
@@ -234,6 +254,16 @@ export default function QuotePage() {
         #calendly-embed {
           min-width: 220px;
           width: 100%;
+        }
+        
+        /* Hide Calendly's internal loader (3 dots) */
+        #calendly-embed iframe {
+          opacity: 0;
+          transition: opacity 0.3s ease-in;
+        }
+        
+        #calendly-embed.calendly-loaded iframe {
+          opacity: 1;
         }
       ` }} />
 
