@@ -1,12 +1,31 @@
 # Horizon Valley Services - Handoff Document
 
-## 🎉 Site Status: READY FOR LAUNCH
+## 🎉 Site Status: LAUNCH-READY (with Minor Disclaimers)
 
-Your site is live and functional at: **https://horizonvalleycleaning.com** (or your Vercel URL)
+Your site is live and functional at: **https://horizonvalleycleaning.com**
+
+**🔴 CRITICAL: See RED_TEAM_AUDIT.md** for complete compliance review before full public launch.
+
+### Launch Readiness: 🟡 85%
+- ✅ **Can soft-launch TODAY** for testing with select customers
+- ⚠️ **Need 2-3 items before full public launch** (see "MUST FIX" section below)
+- ✅ Core functionality, design, and content: COMPLETE
+- ⚠️ Legal compliance (CCPA, contractor license): PARTIAL
 
 ---
 
 ## ✅ What's Been Completed
+
+### ✅ LATEST UPDATE (Just Deployed)
+**Critical Compliance Fixes - October 23, 2025**
+- ✅ **CCPA Compliance**: Added California Privacy Rights section to Privacy Policy
+- ✅ **Footer Legal Link**: Added "CA Privacy Rights" link (required by California law)
+- ✅ **Accessibility**: Skip-to-content link for WCAG 2.1 Level A compliance
+- ✅ **Form Validation**: Error messages, field validation, loading states
+- ✅ **FAQ Schema.org**: FAQPage structured data for Google rich snippets
+- ✅ **Red Team Audit**: Created RED_TEAM_AUDIT.md with 50+ issues documented by severity
+
+### Critical Launch Items (DONE)
 
 ### Critical Launch Items (DONE)
 - ✅ **Real contact info everywhere**: (559) 960-2749 and owners@horizonvalleycleaning.com
@@ -29,7 +48,47 @@ Your site is live and functional at: **https://horizonvalleycleaning.com** (or y
 
 ---
 
-## 🚀 Next Steps (What YOU Need to Do)
+## � MUST FIX BEFORE FULL PUBLIC LAUNCH
+
+### 1. **Contractor License Number** (CRITICAL - California Law)
+**Issue**: California requires contractors to display license numbers on all advertising (including websites)  
+**Risk**: $500-$5,000 fine per violation, can't legally operate without compliance  
+**Applies To**: Tree trimming, junk removal, moving services (if over certain $ threshold)
+
+**Action Required**:
+1. Get your CSLB license number(s) from Cody or partners
+2. Add to footer (bottom of page.tsx, line ~478):
+   ```tsx
+   Licensed & Insured | License #XXXXXX
+   ```
+3. Add to Terms of Service page if needed
+
+**Status**: ⚠️ UNKNOWN - Need license info from Cody
+
+---
+
+### 2. **Business Address Clarification** (HIGH PRIORITY)
+**Issue**: Site only shows "Ukiah, CA 95482" - no street address  
+**Risk**: Looks suspicious, required for Google Business Profile  
+**Options**:
+- Add street address if you have physical location
+- OR change to: "Service-area based business - No walk-in location" + service areas
+
+**Action Required**: Decide address strategy with Cody, then update footer and contact sections
+
+---
+
+### 3. **Insurance Details** (MEDIUM PRIORITY - Trust Signal)
+**Issue**: Claims "licensed & insured" but no specifics  
+**Risk**: Reduces customer trust, can't verify claims  
+**Recommendation**: Add to footer or about section:
+- Insurance company name
+- Policy type (General Liability, Workers Comp)
+- Coverage amount (e.g., "$1M general liability")
+
+---
+
+## �🚀 Next Steps (What YOU Need to Do)
 
 ### 1. Add Calendly Integration (HIGH PRIORITY)
 **Where**: `/src/app/quote/page.tsx` (line ~148)
@@ -224,16 +283,44 @@ Current site stats:
 
 ---
 
-## 🔧 Future Enhancements (Lower Priority)
+## � RED TEAM AUDIT SUMMARY
 
-These are in `LAUNCH_CHECKLIST.md` but not critical for launch:
+**Full Report**: See `RED_TEAM_AUDIT.md` for complete 50+ issue breakdown
+
+### Compliance Status:
+- 🔴 **CRITICAL** (3 issues): CCPA ✅ FIXED, Contractor License ❌, Skip Link ✅ FIXED
+- 🟠 **HIGH** (7 issues): Form validation ✅ FIXED, FAQ Schema ✅ FIXED, Address ❌, others pending
+- 🟡 **MEDIUM** (10+ issues): Cookie consent, canonical tags, pricing indicators, etc.
+- 🟢 **LOW** (20+ nice-to-haves): Testimonials, blog, breadcrumbs, social links, etc.
+
+### What's Fixed:
+✅ CCPA compliance (California privacy rights)  
+✅ Skip-to-content accessibility link  
+✅ Form error handling and validation  
+✅ Loading states for form submission  
+✅ FAQ Schema.org structured data  
+
+### What Remains:
+❌ Contractor license display  
+❌ Business address clarification  
+❌ reCAPTCHA for spam prevention  
+❌ Cookie consent banner (when Analytics added)  
+❌ Insurance details display  
+
+---
+
+## �🔧 Future Enhancements (Lower Priority)
+
+These are documented in `RED_TEAM_AUDIT.md` but not critical for launch:
 
 1. **Blog section** - for SEO content ("How to maintain your deck in wine country", etc.)
 2. **Customer testimonials** - add once you have some
 3. **Before/after gallery** - showcase your work
 4. **Service area map** - visual of counties you serve
-5. **FAQ page** - common questions
-6. **Privacy policy / Terms** - legally nice to have
+5. **Cookie consent banner** - required once Google Analytics is added
+6. **reCAPTCHA** - spam prevention for forms
+7. **Individual service pages** - /services/power-washing, etc. for SEO
+8. **Breadcrumb navigation** - UX and SEO improvement
 
 ---
 
@@ -274,21 +361,36 @@ These are in `LAUNCH_CHECKLIST.md` but not critical for launch:
 
 ## 🎤 What to Tell Cody
 
-**"Site's ready! Here's the link: [your-vercel-url or horizonvalleycleaning.com]**
+**"Site's 85% launch-ready! Here's the link: https://horizonvalleycleaning.com**
 
-**What's working:**
-- Mobile menu works
-- All phone numbers click-to-call
-- Contact info is real and everywhere
-- Quote page is set up (I'm adding Calendly this week)
-- Shows up in Google search
-- Fast, professional, ready for customers
+**What's working NOW:**
+✅ Mobile menu, click-to-call, all contact info functional  
+✅ Quote page with form (needs backend connected)  
+✅ Privacy Policy & Terms of Service pages  
+✅ California CCPA compliance  
+✅ Accessibility (skip link, focus states)  
+✅ FAQ with SEO markup  
+✅ Fast, professional, mobile-optimized  
 
-**What you need to do:**
-- Test it on your phone
-- Try calling from the site (click the phone numbers)
-- Let me know if you want any wording changed
-- I'll add Google Analytics this week to track visitors"
+**What I NEED from you before full launch:**
+❗ **Contractor license number(s)** - required by California law to display  
+❗ **Business address decision** - street address or "service-area only"?  
+❗ **Insurance details** - company name, policy type, coverage amount  
+
+**What YOU should add this week:**
+⚠️ Calendly scheduling link (I left placeholder for you)  
+⚠️ Form submission backend (I recommend FormSubmit.co - free, 5 min setup)  
+⚠️ Google Analytics tracking ID  
+
+**Testing you should do:**
+📱 Test on your phone (menu, click-to-call, scroll through all sections)  
+📱 Share link with 2-3 friends, get feedback  
+📱 Try the quote form (once you connect backend)  
+
+**Timeline:**
+- **Today**: You can share with close contacts for feedback
+- **This week**: Add license #, address, insurance → FULL PUBLIC LAUNCH
+- **Next week**: Add Calendly, Analytics, optimize based on feedback"
 
 ---
 
@@ -326,6 +428,69 @@ horizon valley/
 
 ---
 
-**You're 95% there. Just need to add Calendly embed and you're FULLY ready to rock!**
+---
+
+## 📋 Pre-Launch Checklist
+
+Use this before showing to Cody or going fully public:
+
+### Legal/Compliance:
+- ✅ Privacy Policy page exists
+- ✅ Terms of Service page exists
+- ✅ CCPA compliance section added
+- ✅ Footer has legal links
+- ❌ Contractor license number displayed
+- ❌ Business address clarified
+- ⚠️ Insurance details shown (optional but recommended)
+
+### Functionality:
+- ✅ Mobile menu works
+- ✅ Click-to-call buttons functional
+- ✅ Click-to-email buttons functional
+- ✅ Quote form has validation
+- ⚠️ Quote form connected to backend (FormSubmit/Netlify/etc.)
+- ⚠️ Calendly scheduling embedded
+
+### SEO/Analytics:
+- ✅ Meta tags optimized
+- ✅ Schema.org LocalBusiness markup
+- ✅ Schema.org FAQPage markup
+- ✅ Sitemap.xml exists
+- ✅ Robots.txt configured
+- ❌ Google Analytics installed
+- ❌ Google Business Profile created
+- ❌ Domain configured (if using custom domain)
+
+### Testing:
+- ⚠️ Tested on iPhone Safari
+- ⚠️ Tested on Android Chrome
+- ⚠️ Tested on desktop (Chrome, Firefox, Safari)
+- ⚠️ Shared with 2-3 people for feedback
+- ⚠️ Verified all links work
+- ⚠️ Tested form submission
+
+---
+
+## 🚨 Known Issues & Workarounds
+
+From RED_TEAM_AUDIT.md:
+
+1. **No reCAPTCHA**: Form could get spam  
+   *Workaround*: Monitor submissions, add reCAPTCHA later if needed
+
+2. **No cookie consent banner**: Required once you add Analytics  
+   *Workaround*: Don't add Analytics until you add cookie banner
+
+3. **Email in plain text**: Bots could scrape for spam  
+   *Workaround*: Accept this risk or obfuscate later
+
+4. **Form has no backend**: Currently just shows success message  
+   *Workaround*: Phone and email CTAs work as primary contact methods
+
+---
+
+**You're 85% there. Critical fixes deployed. Need license #, address, and insurance details to hit 100%!**
+
+Full compliance audit in `RED_TEAM_AUDIT.md` → Review with Cody before full public launch.
 
 Let me know when you want me to help with anything else! 🚀
