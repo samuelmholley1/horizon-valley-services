@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function QuotePage() {
   const [formData, setFormData] = useState({
@@ -81,50 +83,33 @@ export default function QuotePage() {
 
   if (submitSuccess) {
     return (
-      <main className="min-h-screen bg-horizon-cream">
-        {/* Navigation */}
-        <nav className="bg-horizon-white shadow-md sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="flex justify-between items-center py-4">
-              <Link href="/" className="flex items-center space-x-3">
-                <div className="w-12 h-12 relative">
-                  <Image 
-                    src="/HV_logo.jpeg" 
-                    alt="Horizon Valley Services" 
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <span className="text-2xl font-bold text-horizon-black">Horizon Valley</span>
-              </Link>
-            </div>
-          </div>
-        </nav>
+      <main className="min-h-screen bg-horizon-black">
+        <Header />
 
         {/* Success Message */}
         <div className="py-20 px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-horizon-white p-12 rounded-xl shadow-lg border border-gray-100">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-900 p-12 rounded-xl shadow-lg border border-gray-800">
+              <div className="w-20 h-20 bg-blue-600 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h1 className="text-4xl font-bold text-horizon-black mb-4">Thank You!</h1>
-              <p className="text-lg text-horizon-slate mb-8 leading-relaxed">
+              <h1 className="text-4xl font-bold text-horizon-white mb-4">Thank You!</h1>
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                 We&#39;ve received your quote request and will get back to you within 24 hours. 
                 We look forward to serving you!
               </p>
               <div className="space-y-4">
-                <p className="text-horizon-charcoal">
+                <p className="text-gray-400">
                   Need immediate assistance?<br />
-                  <a href="tel:707-972-4525" className="text-2xl font-bold text-horizon-black hover:text-horizon-charcoal transition-colors">
-                    (707-972-4525
+                  <a href="tel:7079724525" className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
+                    (707) 972-4525
                   </a>
                 </p>
                 <Link 
                   href="/"
-                  className="inline-block bg-horizon-black text-horizon-white px-8 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300"
+                  className="inline-block bg-blue-600 text-horizon-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-600/30"
                 >
                   Back to Home
                 </Link>
@@ -132,36 +117,15 @@ export default function QuotePage() {
             </div>
           </div>
         </div>
+        
+        <Footer />
       </main>
     )
   }
 
   return (
-    <main className="min-h-screen bg-horizon-cream">
-      {/* Navigation */}
-      <nav className="bg-horizon-white shadow-md sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-12 h-12 relative">
-                <Image 
-                  src="/HV_logo.jpeg" 
-                  alt="Horizon Valley Services" 
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-2xl font-bold text-horizon-black">Horizon Valley</span>
-            </Link>
-            <a 
-              href="tel:707-972-4525"
-              className="bg-horizon-black text-horizon-white px-6 py-2 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300"
-            >
-              Call (707-972-4525
-            </a>
-          </div>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-horizon-black">
+      <Header />
 
       {/* Hero Section */}
       <section className="py-16 bg-horizon-black text-horizon-white">
@@ -174,14 +138,14 @@ export default function QuotePage() {
       </section>
 
       {/* Calendly Section */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4 bg-horizon-charcoal">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-horizon-white p-8 md:p-12 rounded-xl shadow-lg border border-gray-100">
+          <div className="bg-gray-900 p-8 md:p-12 rounded-xl shadow-lg border border-gray-800">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-horizon-black mb-4">
+              <h2 className="text-3xl font-bold text-horizon-white mb-4">
                 Schedule a Consultation Call
               </h2>
-              <p className="text-lg text-horizon-slate leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 Pick a time that works for you. We&#39;ll discuss your needs, answer questions, and provide accurate pricing.
               </p>
             </div>
@@ -195,8 +159,8 @@ export default function QuotePage() {
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             
             <div className="mt-6 text-center">
-              <p className="text-sm text-horizon-slate">
-                Can&#39;t find a time that works? <a href="tel:7079724525" className="font-semibold text-horizon-black hover:underline">Call us at (707) 972-4525</a>
+              <p className="text-sm text-gray-400">
+                Can&#39;t find a time that works? <a href="tel:7079724525" className="font-semibold text-blue-400 hover:underline">Call us at (707) 972-4525</a>
               </p>
             </div>
           </div>
@@ -204,30 +168,30 @@ export default function QuotePage() {
       </section>
 
       {/* Form Fallback Section */}
-      <section className="py-12 px-4 bg-horizon-warm">
+      <section className="py-12 px-4 bg-horizon-black">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-horizon-black mb-4">
+            <h2 className="text-3xl font-bold text-horizon-white mb-4">
               Not Ready to Schedule?
             </h2>
-            <p className="text-lg text-horizon-slate leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               Fill out this form and we&#39;ll call you back at your convenience
             </p>
           </div>
 
-          <div className="bg-horizon-white p-8 md:p-12 rounded-xl shadow-lg border border-gray-100">
+          <div className="bg-gray-900 p-8 md:p-12 rounded-xl shadow-lg border border-gray-800">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-horizon-charcoal mb-2">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                 Full Name *
               </label>
               <input
                 type="text"
                 id="name"
                 required
-                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-horizon-charcoal focus:border-transparent ${
-                  errors.name ? 'border-red-500' : 'border-horizon-slate'
+                className={`w-full px-4 py-3 border rounded-lg bg-gray-800 text-horizon-white focus:ring-2 focus:ring-blue-600 focus:border-transparent ${
+                  errors.name ? 'border-red-500' : 'border-gray-700'
                 }`}
                 value={formData.name}
                 onChange={(e) => {
@@ -235,9 +199,9 @@ export default function QuotePage() {
                   if (errors.name) setErrors({ ...errors, name: '' });
                 }}
               />
-              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+              {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name}</p>}
             </div>                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-horizon-black mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-300 mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -247,7 +211,7 @@ export default function QuotePage() {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition"
+                    className="w-full px-4 py-3 border border-gray-700 bg-gray-800 text-horizon-white rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -255,7 +219,7 @@ export default function QuotePage() {
 
               <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-horizon-charcoal mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                 Email Address *
               </label>
               <input
@@ -263,8 +227,8 @@ export default function QuotePage() {
                 id="email"
                 required
                 placeholder="you@example.com"
-                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-horizon-charcoal focus:border-transparent ${
-                  errors.email ? 'border-red-500' : 'border-horizon-slate'
+                className={`w-full px-4 py-3 border rounded-lg bg-gray-800 text-horizon-white focus:ring-2 focus:ring-blue-600 focus:border-transparent ${
+                  errors.email ? 'border-red-500' : 'border-gray-700'
                 }`}
                 value={formData.email}
                 onChange={(e) => {
@@ -272,9 +236,9 @@ export default function QuotePage() {
                   if (errors.email) setErrors({ ...errors, email: '' });
                 }}
               />
-              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+              {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
             </div>                <div>
-                  <label htmlFor="serviceType" className="block text-sm font-semibold text-horizon-black mb-2">
+                  <label htmlFor="serviceType" className="block text-sm font-semibold text-gray-300 mb-2">
                     Service Needed *
                   </label>
                   <select
@@ -283,7 +247,7 @@ export default function QuotePage() {
                     required
                     value={formData.serviceType}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition bg-white"
+                    className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition bg-gray-800 text-horizon-white"
                   >
                     <option value="">Select a service</option>
                     <option value="power-washing">Power Washing</option>
@@ -299,7 +263,7 @@ export default function QuotePage() {
               </div>
 
             <div>
-              <label htmlFor="address" className="block text-sm font-medium text-horizon-charcoal mb-2">
+              <label htmlFor="address" className="block text-sm font-medium text-gray-300 mb-2">
                 Property Address *
               </label>
               <input
@@ -307,8 +271,8 @@ export default function QuotePage() {
                 id="address"
                 required
                 placeholder="123 Main St, City, CA 94XXX"
-                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-horizon-charcoal focus:border-transparent ${
-                  errors.address ? 'border-red-500' : 'border-horizon-slate'
+                className={`w-full px-4 py-3 border rounded-lg bg-gray-800 text-horizon-white focus:ring-2 focus:ring-blue-600 focus:border-transparent ${
+                  errors.address ? 'border-red-500' : 'border-gray-700'
                 }`}
                 value={formData.address}
                 onChange={(e) => {
@@ -316,9 +280,9 @@ export default function QuotePage() {
                   if (errors.address) setErrors({ ...errors, address: '' });
                 }}
               />
-              {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
+              {errors.address && <p className="text-red-400 text-sm mt-1">{errors.address}</p>}
             </div>              <div>
-                <label htmlFor="description" className="block text-sm font-semibold text-horizon-black mb-2">
+                <label htmlFor="description" className="block text-sm font-semibold text-gray-300 mb-2">
                   Brief Description of Work Needed
                 </label>
                 <textarea
@@ -327,13 +291,13 @@ export default function QuotePage() {
                   rows={4}
                   value={formData.description}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition resize-none"
+                  className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition resize-none bg-gray-800 text-horizon-white"
                   placeholder="Tell us about your project..."
                 />
               </div>
 
               <div>
-                <label htmlFor="callbackTime" className="block text-sm font-semibold text-horizon-black mb-2">
+                <label htmlFor="callbackTime" className="block text-sm font-semibold text-gray-300 mb-2">
                   Best Time to Call Back
                 </label>
                 <select
@@ -341,7 +305,7 @@ export default function QuotePage() {
                   name="callbackTime"
                   value={formData.callbackTime}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition bg-white"
+                  className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition bg-gray-800 text-horizon-white"
                 >
                   <option value="">Select preferred time</option>
                   <option value="morning">Morning (8am - 12pm)</option>
@@ -354,43 +318,20 @@ export default function QuotePage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-horizon-black text-horizon-white px-8 py-4 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-blue-600 text-horizon-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-600/30 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Quote Request'}
               </button>
 
-              <p className="text-sm text-horizon-slate text-center">
-                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:7079724525" className="text-horizon-black hover:underline">(707) 972-4525</a>
+              <p className="text-sm text-gray-400 text-center">
+                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:7079724525" className="text-blue-400 hover:underline">(707) 972-4525</a>
               </p>
             </form>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-horizon-charcoal text-horizon-white py-12">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <div className="mb-6">
-            <div className="w-16 h-16 mx-auto mb-4 relative">
-              <Image 
-                src="/HV_logo.jpeg" 
-                alt="Horizon Valley Services" 
-                fill
-                className="object-contain"
-              />
-            </div>
-            <h2 className="text-2xl font-bold mb-2">Horizon Valley Services LLC</h2>
-          </div>
-          <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-            Professional exterior cleaning and maintenance services proudly serving Northern California&#39;s wine country
-          </p>
-          <div className="border-t border-gray-600 pt-6">
-            <p className="text-gray-500 text-sm">
-              © 2025 Horizon Valley Services LLC. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }
