@@ -27,6 +27,7 @@ export default function Header() {
               width={200}
               height={32}
               className="h-8 w-auto object-contain"
+              quality={100}
               priority
             />
           </Link>
