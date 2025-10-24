@@ -21,7 +21,7 @@ export default function Header() {
                 className="object-contain"
               />
             </div>
-            <div className="h-8 w-auto relative" style={{ width: '200px' }}>
+            <div className="h-8 relative" style={{ width: '150px' }}>
               <Image 
                 src="/HV_logo_text.png" 
                 alt="Horizon Valley Services" 

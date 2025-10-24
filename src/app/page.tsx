@@ -13,12 +13,14 @@ export default function Home() {
       <section id="main-content" className="relative bg-gradient-to-b from-horizon-black via-gray-900 to-horizon-charcoal py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 relative">
+            <div className="w-64 h-64 mx-auto mb-6 relative overflow-hidden">
               <Image 
-                src="/HV_icon.png" 
+                src="/HV_logo.png" 
                 alt="Horizon Valley Services" 
                 fill
                 className="object-contain"
+                priority
+                style={{ objectFit: 'contain' }}
               />
             </div>
           </div>
