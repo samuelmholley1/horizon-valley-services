@@ -102,27 +102,40 @@ export default function Home() {
               />
             </div>
           </div>
-          <h2 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+                    <h2 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
             Full-Service Property<br />
             <span className="text-horizon-warm">Care &amp; Maintenance</span>
           </h2>
-          <p className="text-xl mb-10 max-w-3xl mx-auto text-gray-300 leading-relaxed">
-            Serving San Francisco, Marin, Sonoma, and Mendocino counties with comprehensive property services. 
-            From power washing to moving, we&#39;re your trusted local experts for all property care needs.
+          <p className="text-xl mb-6 max-w-3xl mx-auto text-gray-300 leading-relaxed">
+            Professional power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming serving San Francisco, Marin, Sonoma, and Mendocino counties.
           </p>
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              FREE Estimates
+            </div>
+            <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+              </svg>
+              Same-Week Service
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:559-960-2749" 
               className="bg-horizon-white text-horizon-black px-8 py-4 rounded-lg font-semibold hover:bg-horizon-warm transition duration-300 shadow-lg text-center"
             >
-              Call (559) 960-2749
+              📞 Call Now - (559) 960-2749
             </a>
-            <a 
-              href="mailto:owners@horizonvalleycleaning.com"
+            <Link
+              href="/quote"
               className="border-2 border-horizon-white text-horizon-white px-8 py-4 rounded-lg font-semibold hover:bg-horizon-white hover:text-horizon-black transition duration-300 text-center"
             >
-              Email Us
-            </a>
+              Get Free Quote →
+            </Link>
           </div>
         </div>
         {/* Decorative elements */}
@@ -248,30 +261,89 @@ export default function Home() {
       </section>
 
       {/* Service Area Section */}
-      <section className="py-20 bg-horizon-black text-horizon-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-rural-texture opacity-5"></div>
-        <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
-          <h3 className="text-4xl font-bold mb-6">Our Service Areas</h3>
-          <p className="text-lg mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Proudly serving the Bay Area and Northern California wine country communities
+            {/* Why Choose Us Section */}
+      <section className="py-20 px-4 bg-horizon-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-horizon-black mb-4">
+            Why Choose Horizon Valley?
+          </h2>
+          <p className="text-center text-horizon-slate mb-12 max-w-2xl mx-auto">
+            Local expertise, professional service, and a commitment to excellence that sets us apart
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
+              <div className="w-12 h-12 bg-green-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-horizon-black mb-2">Free Estimates</h4>
+              <p className="text-horizon-slate text-sm">No-obligation quotes for all services. Know exactly what to expect before we start.</p>
+            </div>
+            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
+              <div className="w-12 h-12 bg-blue-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-horizon-black mb-2">Fast Scheduling</h4>
+              <p className="text-horizon-slate text-sm">Most jobs scheduled within days, not weeks. We respect your time and work efficiently.</p>
+            </div>
+            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
+              <div className="w-12 h-12 bg-purple-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-horizon-black mb-2">Local Team</h4>
+              <p className="text-horizon-slate text-sm">Bay Area founded and operated. We know the area and care about our community.</p>
+            </div>
+            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
+              <div className="w-12 h-12 bg-orange-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-horizon-black mb-2">Quality Guaranteed</h4>
+              <p className="text-horizon-slate text-sm">100% satisfaction guarantee. We fix any issues promptly at no extra charge.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-horizon-charcoal to-horizon-black text-horizon-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Serving the Bay Area &amp; Northern California
+          </h2>
+          <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+            Professional property care across four counties - from San Francisco to the Mendocino coast
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-all hover:scale-105">
               <h4 className="text-2xl font-semibold text-horizon-white mb-3">San Francisco</h4>
-              <p className="text-gray-300">City and county coverage</p>
+              <p className="text-gray-300 text-sm mb-2">All neighborhoods including:</p>
+              <p className="text-gray-400 text-xs">Marina, Mission, Sunset, Richmond, SOMA, Pacific Heights</p>
             </div>
-            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-all hover:scale-105">
               <h4 className="text-2xl font-semibold text-horizon-white mb-3">Marin County</h4>
-              <p className="text-gray-300">Sausalito, Mill Valley, San Rafael</p>
+              <p className="text-gray-300 text-sm mb-2">Including major cities:</p>
+              <p className="text-gray-400 text-xs">San Rafael, Novato, Mill Valley, Sausalito, Tiburon, San Anselmo</p>
             </div>
-            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-all hover:scale-105">
               <h4 className="text-2xl font-semibold text-horizon-white mb-3">Sonoma County</h4>
-              <p className="text-gray-300">Healdsburg, Santa Rosa, wine country</p>
+              <p className="text-gray-300 text-sm mb-2">Wine country & beyond:</p>
+              <p className="text-gray-400 text-xs">Santa Rosa, Petaluma, Healdsburg, Sebastopol, Rohnert Park</p>
             </div>
-            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-all hover:scale-105">
               <h4 className="text-2xl font-semibold text-horizon-white mb-3">Mendocino County</h4>
-              <p className="text-gray-300">Ukiah, Willits, Fort Bragg</p>
+              <p className="text-gray-300 text-sm mb-2">Coastal to inland:</p>
+              <p className="text-gray-400 text-xs">Ukiah, Willits, Fort Bragg, Mendocino, Point Arena</p>
             </div>
+          </div>
+          <div className="text-center mt-10">
+            <p className="text-gray-400 text-sm">Don&apos;t see your city? <a href="tel:559-960-2749" className="text-horizon-warm hover:underline font-semibold">Call (559) 960-2749</a> - we likely serve your area!</p>
           </div>
         </div>
       </section>
