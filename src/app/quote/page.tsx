@@ -34,15 +34,20 @@ export default function QuotePage() {
       const embedDiv = document.getElementById('calendly-embed')
       
       if (skeleton && embedDiv) {
-        // Poll for iframe to load and then hide skeleton
+        // Poll for iframe to load and wait for content to be ready
         const poll = () => {
           const iframe = embedDiv.querySelector('iframe')
           if (!iframe) {
             requestAnimationFrame(poll)
             return
           }
+          
+          // Wait for iframe to fully load, then add delay for Calendly to render
           iframe.addEventListener('load', () => {
-            skeleton.remove()
+            // Wait 1.5 seconds after iframe loads to ensure Calendly content is fully rendered
+            setTimeout(() => {
+              skeleton.remove()
+            }, 1500)
           })
         }
         poll()
