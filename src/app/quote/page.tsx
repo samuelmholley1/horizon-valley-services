@@ -373,9 +373,12 @@ export default function QuotePage() {
             <p className="text-lg text-gray-300 leading-relaxed">
               Fill out this form and we&#39;ll call you back at your convenience
             </p>
+            <p className="text-sm text-gray-400 mt-3 italic">
+              Online form submissions coming soon - For now, please call us at <a href="tel:7079724525" className="text-blue-400 hover:underline font-semibold">(707) 972-4525</a>
+            </p>
           </div>
 
-          <div className="bg-gray-900 p-8 md:p-12 rounded-xl shadow-lg border border-gray-800">
+          <div className="bg-gray-900 p-8 md:p-12 rounded-xl shadow-lg border border-gray-800 opacity-60 pointer-events-none">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
             <div>
