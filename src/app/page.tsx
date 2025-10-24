@@ -1,96 +1,16 @@
-'use client'
-
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <main className="min-h-screen bg-horizon-cream">
-      {/* Navigation */}
-      <nav className="bg-horizon-white shadow-lg border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 relative">
-                <Image 
-                  src="/HV_logo.jpeg" 
-                  alt="Horizon Valley Services Logo" 
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-horizon-black tracking-tight">
-                  Horizon Valley Services
-                </h1>
-                <p className="text-sm text-horizon-stone font-medium">LLC</p>
-              </div>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#services" className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors">Services</a>
-              <a href="#team" className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors">Team</a>
-              <a href="#contact" className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors">Contact</a>
-            </div>
-            <div className="md:hidden">
-              <button 
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-horizon-charcoal hover:text-horizon-black p-2"
-                aria-label="Toggle menu"
-              >
-                {mobileMenuOpen ? (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                ) : (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
-            </div>
-          </div>
-          
-          {/* Mobile Menu */}
-          {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-200">
-              <div className="flex flex-col space-y-4">
-                <a 
-                  href="#services" 
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors px-4 py-2"
-                >
-                  Services
-                </a>
-                <a 
-                  href="#team" 
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors px-4 py-2"
-                >
-                  Team
-                </a>
-                <a 
-                  href="#contact" 
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-horizon-charcoal hover:text-horizon-black font-medium transition-colors px-4 py-2"
-                >
-                  Contact
-                </a>
-                <a 
-                  href="tel:559-960-2749"
-                  className="bg-horizon-black text-horizon-white px-6 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300 text-center mx-4"
-                >
-                  Call (559) 960-2749
-                </a>
-              </div>
-            </div>
-          )}
-        </div>
-      </nav>
+    <main className="min-h-screen bg-horizon-black">
+      <Header />
 
       {/* Hero Section */}
-      <section id="main-content" className="relative bg-gradient-to-b from-horizon-cream to-horizon-warm py-20 px-4">
+      <section id="main-content" className="relative bg-gradient-to-b from-horizon-black via-gray-900 to-horizon-charcoal py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
             <div className="w-24 h-24 mx-auto mb-6 relative">
@@ -102,21 +22,21 @@ export default function Home() {
               />
             </div>
           </div>
-                    <h2 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+          <h2 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-horizon-white">
             Full-Service Property<br />
-            <span className="text-horizon-warm">Care &amp; Maintenance</span>
+            <span className="text-blue-400">Care &amp; Maintenance</span>
           </h2>
           <p className="text-xl mb-6 max-w-3xl mx-auto text-gray-300 leading-relaxed">
             Professional power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming serving San Francisco, Marin, Sonoma, and Mendocino counties.
           </p>
           <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+            <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 shadow-lg shadow-blue-600/30">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               FREE Estimates
             </div>
-            <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+            <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 shadow-lg shadow-blue-600/30">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
               </svg>
@@ -126,20 +46,20 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:559-960-2749" 
-              className="bg-horizon-white text-horizon-black px-8 py-4 rounded-lg font-semibold hover:bg-horizon-warm transition duration-300 shadow-lg text-center"
+              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-600/50 text-center"
             >
               📞 Call Now - (559) 960-2749
             </a>
             <Link
               href="/quote"
-              className="border-2 border-horizon-white text-horizon-white px-8 py-4 rounded-lg font-semibold hover:bg-horizon-white hover:text-horizon-black transition duration-300 text-center"
+              className="border-2 border-blue-600 text-blue-400 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300 text-center"
             >
               Get Free Quote →
             </Link>
           </div>
         </div>
         {/* Decorative elements */}
-        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-horizon-cream to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-horizon-charcoal to-transparent"></div>
       </section>
 
       {/* Why Choose Us Section */}
