@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
@@ -20,6 +20,43 @@ export default function QuotePage() {
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
   const [errors, setErrors] = useState<{[key: string]: string}>({});
+
+  // Load Calendly script and handle skeleton loader
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://assets.calendly.com/assets/external/widget.js'
+    script.async = false // Load synchronously to ensure Calendly object exists
+    document.head.appendChild(script)
+
+    // Initialize Calendly after script loads
+    script.onload = () => {
+      const skeleton = document.getElementById('skeleton-loader')
+      const embedDiv = document.getElementById('calendly-embed')
+      
+      if (skeleton && embedDiv) {
+        // Poll for iframe to load and then hide skeleton
+        const poll = () => {
+          const iframe = embedDiv.querySelector('iframe')
+          if (!iframe) {
+            requestAnimationFrame(poll)
+            return
+          }
+          iframe.addEventListener('load', () => {
+            skeleton.remove()
+          })
+        }
+        poll()
+      }
+    }
+
+    return () => {
+      // Cleanup script on unmount
+      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')
+      if (existingScript) {
+        existingScript.remove()
+      }
+    }
+  }, [])
 
   const validateForm = () => {
     const newErrors: {[key: string]: string} = {};
@@ -143,6 +180,58 @@ export default function QuotePage() {
 
   return (
     <main className="min-h-screen bg-horizon-black">
+      {/* Skeleton Loader CSS */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes shimmer {
+          0% { left: -100%; }
+          100% { left: 100%; }
+        }
+        
+        .skeleton-shape {
+          position: relative;
+          overflow: hidden;
+          background: linear-gradient(
+            45deg,
+            rgba(37, 99, 235, 0.1) 0%,
+            rgba(37, 99, 235, 0.25) 50%,
+            rgba(37, 99, 235, 0.1) 100%
+          );
+        }
+        
+        .skeleton-shape::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            45deg,
+            transparent 30%,
+            rgba(37, 99, 235, 0.1) 50%,
+            transparent 70%
+          );
+          animation: skeleton-shimmer 3s infinite ease-in-out;
+        }
+        
+        @keyframes skeleton-shimmer {
+          0% { left: -100%; }
+          100% { left: 100%; }
+        }
+        
+        .calendly-placeholder {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          min-height: 700px;
+        }
+        
+        #calendly-embed {
+          min-width: 220px;
+          width: 100%;
+        }
+      ` }} />
+
       <Header />
 
       {/* Hero Section */}
@@ -168,13 +257,67 @@ export default function QuotePage() {
               </p>
             </div>
             
-            {/* Calendly Embed - Live Widget */}
-            <div 
-              className="calendly-inline-widget" 
-              data-url="https://calendly.com/owners-horizonvalleycleaning/30min?hide_event_type_details=1&hide_gdpr_banner=1" 
-              style={{ minWidth: '320px', height: '700px' }}
-            />
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            {/* Calendly Embed Container with Skeleton Loader */}
+            <div className="calendly-placeholder relative min-h-[700px]">
+              {/* Skeleton Loader */}
+              <div id="skeleton-loader" className="absolute inset-0 z-10 flex flex-col gap-2 p-6">
+                {/* Header */}
+                <div className="skeleton-header mb-4">
+                  <div className="skeleton-shape h-7 w-1/3 bg-gradient-to-r from-gray-800 to-gray-700 rounded"></div>
+                </div>
+                
+                {/* Month Navigation */}
+                <div className="skeleton-month-nav flex justify-between items-center mb-5 px-2">
+                  <div className="skeleton-nav-arrow w-4 h-4 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 opacity-20"></div>
+                  <div className="skeleton-shape h-5 w-1/4 bg-gradient-to-r from-gray-800 to-gray-700 opacity-20 rounded"></div>
+                  <div className="skeleton-nav-arrow w-4 h-4 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 opacity-20"></div>
+                </div>
+                
+                {/* Weekdays */}
+                <div className="skeleton-weekdays grid grid-cols-7 gap-1 mb-2 px-1">
+                  {Array.from({ length: 7 }).map((_, i) => (
+                    <div key={i} className="skeleton-weekday h-2 w-3/4 mx-auto bg-gradient-to-r from-gray-700 to-gray-800 opacity-25 rounded"></div>
+                  ))}
+                </div>
+                
+                {/* Calendar Grid */}
+                <div className="skeleton-calendar-grid grid grid-cols-7 gap-1 flex-grow px-1">
+                  {Array.from({ length: 42 }).map((_, i) => (
+                    <div 
+                      key={i} 
+                      className={`skeleton-date-box h-4 rounded border relative overflow-hidden ${
+                        i % 7 === 2 || i % 7 === 5 
+                          ? 'bg-gradient-to-br from-blue-600/8 to-blue-600/4 border-blue-600/15' 
+                          : 'bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700/8'
+                      }`}
+                    >
+                      <div 
+                        className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-600/10 to-transparent animate-pulse"
+                        style={{ 
+                          animation: `shimmer 3s infinite ease-in-out ${i * 0.1}s`,
+                          left: '-100%',
+                          animationName: 'shimmer'
+                        }}
+                      ></div>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Footer */}
+                <div className="skeleton-footer mt-7 px-2">
+                  <div className="skeleton-shape h-3 w-full bg-gradient-to-r from-gray-700 to-gray-800 opacity-20 rounded"></div>
+                </div>
+              </div>
+
+              {/* Calendly Embed - Live Widget */}
+              <div 
+                id="calendly-embed"
+                className="calendly-inline-widget" 
+                data-url="https://calendly.com/owners-horizonvalleycleaning/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+                data-resize="true"
+                style={{ minWidth: '320px', height: '700px', width: '100%' }}
+              />
+            </div>
             
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-400">
