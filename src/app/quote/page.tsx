@@ -196,7 +196,7 @@ export default function QuotePage() {
             
             <div className="mt-6 text-center">
               <p className="text-sm text-horizon-slate">
-                Can&#39;t find a time that works? <a href="tel:707-972-4525</a>
+                Can&#39;t find a time that works? <a href="tel:7079724525" className="font-semibold text-horizon-black hover:underline">Call us at (707) 972-4525</a>
               </p>
             </div>
           </div>
