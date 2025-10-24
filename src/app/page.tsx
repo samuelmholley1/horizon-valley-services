@@ -45,10 +45,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:559-960-2749" 
+              href="tel:707-972-4525" 
               className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-600/50 text-center"
             >
-              📞 Call Now - (559) 960-2749
+              📞 Call Now - (707-972-4525
             </a>
             <Link
               href="/quote"
@@ -277,41 +277,41 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-10">
-            <p className="text-gray-400 text-sm">Don&apos;t see your city? <a href="tel:559-960-2749" className="text-horizon-warm hover:underline font-semibold">Call (559) 960-2749</a> - we likely serve your area!</p>
+            <p className="text-gray-400 text-sm">Don&apos;t see your city? <a href="tel:707-972-4525</a> - we likely serve your area!</p>
           </div>
         </div>
       </section>
 
       {/* Guarantees Section */}
-      <section className="py-16 bg-horizon-cream border-y-2 border-horizon-black/10">
+      <section className="py-16 bg-horizon-black border-y-2 border-gray-800">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="w-16 h-16 bg-horizon-black rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold text-horizon-black mb-2">Satisfaction Guaranteed</h4>
-              <p className="text-horizon-slate">We don&#39;t rest until you&#39;re completely satisfied with our work</p>
+              <h4 className="text-xl font-bold text-horizon-white mb-2">Satisfaction Guaranteed</h4>
+              <p className="text-gray-400">We don&#39;t rest until you&#39;re completely satisfied with our work</p>
             </div>
             <div>
-              <div className="w-16 h-16 bg-horizon-black rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold text-horizon-black mb-2">Reliable & On Time</h4>
-              <p className="text-horizon-slate">Punctual service you can count on, every single time</p>
+              <h4 className="text-xl font-bold text-horizon-white mb-2">Reliable & On Time</h4>
+              <p className="text-gray-400">Punctual service you can count on, every single time</p>
             </div>
             <div>
-              <div className="w-16 h-16 bg-horizon-black rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold text-horizon-black mb-2">Locally Owned & Operated</h4>
-              <p className="text-horizon-slate">Your neighbors, committed to our community</p>
+              <h4 className="text-xl font-bold text-horizon-white mb-2">Locally Owned & Operated</h4>
+              <p className="text-gray-400">Your neighbors, committed to our community</p>
             </div>
           </div>
         </div>
@@ -357,10 +357,10 @@ export default function Home() {
               Join our growing list of satisfied customers across San Francisco, Marin, Sonoma, and Mendocino counties
             </p>
             <a 
-              href="tel:5599602749" 
+              href="tel:707-972-4525" 
               className="inline-block bg-horizon-black text-horizon-white px-8 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition-colors"
             >
-              Call (559) 960-2749 Now
+              Call (707-972-4525 Now
             </a>
           </div>
         </div>
@@ -379,7 +379,7 @@ export default function Home() {
             <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
               <h4 className="text-xl font-semibold text-horizon-black mb-3">What areas do you serve?</h4>
               <p className="text-horizon-slate leading-relaxed">
-                We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties. If you&#39;re unsure whether we cover your area, give us a call at (559) 960-2749 and we&#39;ll let you know!
+                We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties. If you&#39;re unsure whether we cover your area, give us a call at (707-972-4525 and we&#39;ll let you know!
               </p>
             </div>
             <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
@@ -436,7 +436,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-horizon-black font-medium">Call for quote</p>
-                    <a href="tel:559-960-2749" className="text-horizon-slate hover:text-horizon-black transition-colors">(559) 960-2749</a>
+                    <a href="tel:707-972-4525</a>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -471,10 +471,10 @@ export default function Home() {
                 We provide free consultations and competitive pricing for all our services.
               </p>
               <a 
-                href="tel:559-960-2749"
+                href="tel:707-972-4525"
                 className="block w-full bg-horizon-black text-horizon-white px-6 py-4 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300 shadow-lg text-center"
               >
-                Call (559) 960-2749 for Quote
+                Call (707-972-4525 for Quote
               </a>
             </div>
           </div>
@@ -516,7 +516,7 @@ export default function Home() {
             <div className="text-center md:text-right">
               <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
               <div className="space-y-2 text-gray-400 text-sm">
-                <p><a href="tel:559-960-2749" className="hover:text-horizon-white transition-colors">(559) 960-2749</a></p>
+                <p><a href="tel:707-972-4525</a></p>
                 <p><a href="mailto:owners@horizonvalleycleaning.com" className="hover:text-horizon-white transition-colors">owners@horizonvalleycleaning.com</a></p>
                 <p className="mt-4 pt-4 border-t border-gray-600">
                   <Link href="/privacy" className="hover:text-horizon-white transition-colors">Privacy Policy</Link>
@@ -560,7 +560,7 @@ export default function Home() {
               "latitude": 39.1502,
               "longitude": -123.2078
             },
-            "telephone": "+15599602749",
+            "telephone": "+1707-972-4525",
             "email": "owners@horizonvalleycleaning.com",
             "url": "https://horizonvalleycleaning.com",
             "priceRange": "$$",
@@ -709,7 +709,7 @@ export default function Home() {
                 "name": "Do you provide free estimates?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! We offer free, no-obligation estimates for all our services. You can request a quote online or call us at (559) 960-2749."
+                  "text": "Yes! We offer free, no-obligation estimates for all our services. You can request a quote online or call us at (707-972-4525."
                 }
               },
               {

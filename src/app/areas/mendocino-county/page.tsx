@@ -27,7 +27,7 @@ export default function MendocinoCountyPage() {
             image: 'https://horizonvalleycleaning.com/logo.png',
             '@id': 'https://horizonvalleycleaning.com/areas/mendocino-county',
             url: 'https://horizonvalleycleaning.com/areas/mendocino-county',
-            telephone: '(559) 960-2749',
+            telephone: '(707-972-4525',
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Mendocino County',
@@ -87,10 +87,10 @@ export default function MendocinoCountyPage() {
               Get Free Quote in Mendocino →
             </Link>
             <a 
-              href="tel:5599602749"
+              href="tel:707-972-4525"
               className="bg-horizon-white hover:bg-gray-100 text-orange-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center"
             >
-              📞 Call (559) 960-2749
+              📞 Call (707-972-4525
             </a>
           </div>
 
@@ -271,10 +271,10 @@ export default function MendocinoCountyPage() {
 
           <div className="mt-12">
             <a 
-              href="tel:5599602749"
+              href="tel:707-972-4525"
               className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors"
             >
-              Call Your Local Team: (559) 960-2749
+              Call Your Local Team: (707-972-4525
             </a>
           </div>
         </div>
@@ -297,10 +297,10 @@ export default function MendocinoCountyPage() {
               Get Free Mendocino Quote →
             </Link>
             <a 
-              href="tel:5599602749"
+              href="tel:707-972-4525"
               className="bg-orange-900 hover:bg-orange-950 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors border-2 border-white"
             >
-              📞 (559) 960-2749
+              📞 (707-972-4525
             </a>
           </div>
           <p className="mt-8 text-sm text-orange-200">

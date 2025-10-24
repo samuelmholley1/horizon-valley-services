@@ -66,7 +66,7 @@ export default function QuotePage() {
       
       setSubmitSuccess(true);
     } catch (error) {
-      setErrors({ submit: "Something went wrong. Please try again or call us at (559) 960-2749." });
+      setErrors({ submit: "Something went wrong. Please try again or call us at (707-972-4525." });
     } finally {
       setIsSubmitting(false);
     }
@@ -118,8 +118,8 @@ export default function QuotePage() {
               <div className="space-y-4">
                 <p className="text-horizon-charcoal">
                   Need immediate assistance?<br />
-                  <a href="tel:559-960-2749" className="text-2xl font-bold text-horizon-black hover:text-horizon-charcoal transition-colors">
-                    (559) 960-2749
+                  <a href="tel:707-972-4525" className="text-2xl font-bold text-horizon-black hover:text-horizon-charcoal transition-colors">
+                    (707-972-4525
                   </a>
                 </p>
                 <Link 
@@ -154,10 +154,10 @@ export default function QuotePage() {
               <span className="text-2xl font-bold text-horizon-black">Horizon Valley</span>
             </Link>
             <a 
-              href="tel:559-960-2749"
+              href="tel:707-972-4525"
               className="bg-horizon-black text-horizon-white px-6 py-2 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300"
             >
-              Call (559) 960-2749
+              Call (707-972-4525
             </a>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function QuotePage() {
             
             <div className="mt-6 text-center">
               <p className="text-sm text-horizon-slate">
-                Can&#39;t find a time that works? <a href="tel:559-960-2749" className="font-semibold text-horizon-black hover:underline">Call us directly at (559) 960-2749</a>
+                Can&#39;t find a time that works? <a href="tel:707-972-4525</a>
               </p>
             </div>
           </div>
@@ -360,7 +360,7 @@ export default function QuotePage() {
               </button>
 
               <p className="text-sm text-horizon-slate text-center">
-                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:559-960-2749" className="font-semibold text-horizon-black hover:underline">(559) 960-2749</a>
+                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:707-972-4525</a>
               </p>
             </form>
           </div>

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Horizon Valley Services LLC - Full-Service Property Care & Maintenance | Bay Area',
-  description: 'Comprehensive property services serving San Francisco, Marin, Sonoma, and Mendocino counties. Expert power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming. Local, reliable service throughout the Bay Area and Northern California. Call (559) 960-2749 for a free quote.',
+  description: 'Comprehensive property services serving San Francisco, Marin, Sonoma, and Mendocino counties. Expert power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming. Local, reliable service throughout the Bay Area and Northern California. Call (707-972-4525 for a free quote.',
   keywords: 'property services, power washing, window cleaning, gutter cleaning, junk removal, moving services, tree trimming, San Francisco, Marin County, Sonoma County, Mendocino County, Bay Area services, Northern California, wine country, residential services, commercial services',
   authors: [{ name: 'Horizon Valley Services LLC' }],
   creator: 'Horizon Valley Services LLC',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Horizon Valley Services LLC - Full-Service Property Care',
-    description: 'Power washing, window cleaning, gutter cleaning, junk removal, moving, and tree trimming serving the Bay Area and Northern California. Call (559) 960-2749 for a free quote.',
+    description: 'Power washing, window cleaning, gutter cleaning, junk removal, moving, and tree trimming serving the Bay Area and Northern California. Call (707-972-4525 for a free quote.',
     images: ['/HV_logo.jpeg'],
   },
   robots: {
