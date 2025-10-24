@@ -48,7 +48,7 @@ export default function Home() {
               href="tel:707-972-4525" 
               className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-600/50 text-center"
             >
-              📞 Call Now - (707-972-4525
+              📞 Call Now - (707) 972-4525
             </a>
             <Link
               href="/quote"
@@ -360,7 +360,7 @@ export default function Home() {
               href="tel:707-972-4525" 
               className="inline-block bg-horizon-black text-horizon-white px-8 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition-colors"
             >
-              Call (707-972-4525 Now
+              Call (707) 972-4525 Now
             </a>
           </div>
         </div>
@@ -655,7 +655,7 @@ export default function Home() {
                 "name": "Do you provide free estimates?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! We offer free, no-obligation estimates for all our services. You can request a quote online or call us at (707-972-4525."
+                  "text": "Yes! We offer free, no-obligation estimates for all our services. You can request a quote online or call us at (707) 972-4525."
                 }
               },
               {

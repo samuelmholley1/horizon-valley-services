@@ -64,7 +64,7 @@ export default function NotFound() {
             href="tel:707-972-4525" 
             className="text-horizon-black font-bold text-lg hover:underline"
           >
-            Call (707-972-4525
+            Call (707) 972-4525
           </a>
         </div>
       </div>

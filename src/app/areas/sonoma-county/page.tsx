@@ -27,7 +27,7 @@ export default function SonomaCountyPage() {
             image: 'https://horizonvalleycleaning.com/logo.png',
             '@id': 'https://horizonvalleycleaning.com/areas/sonoma-county',
             url: 'https://horizonvalleycleaning.com/areas/sonoma-county',
-            telephone: '(707-972-4525',
+            telephone: '(707) 972-4525',
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Sonoma County',
@@ -90,7 +90,7 @@ export default function SonomaCountyPage() {
               href="tel:707-972-4525"
               className="bg-horizon-white hover:bg-gray-100 text-purple-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center"
             >
-              📞 Call (707-972-4525
+              📞 Call (707) 972-4525
             </a>
           </div>
 
@@ -273,7 +273,7 @@ export default function SonomaCountyPage() {
               href="tel:707-972-4525"
               className="inline-block bg-purple-500 hover:bg-purple-600 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors"
             >
-              Call Now for Sonoma Service: (707-972-4525
+              Call Now for Sonoma Service: (707) 972-4525
             </a>
           </div>
         </div>
@@ -299,7 +299,7 @@ export default function SonomaCountyPage() {
               href="tel:707-972-4525"
               className="bg-purple-900 hover:bg-purple-950 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors border-2 border-white"
             >
-              📞 (707-972-4525
+              📞 (707) 972-4525
             </a>
           </div>
           <p className="mt-8 text-sm text-purple-200">

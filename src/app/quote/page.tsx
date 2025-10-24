@@ -68,7 +68,7 @@ export default function QuotePage() {
       
       setSubmitSuccess(true);
     } catch (error) {
-      setErrors({ submit: "Something went wrong. Please try again or call us at (707-972-4525." });
+      setErrors({ submit: "Something went wrong. Please try again or call us at (707) 972-4525." });
     } finally {
       setIsSubmitting(false);
     }

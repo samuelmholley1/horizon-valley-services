@@ -27,7 +27,7 @@ export default function MarinCountyPage() {
             image: 'https://horizonvalleycleaning.com/logo.png',
             '@id': 'https://horizonvalleycleaning.com/areas/marin-county',
             url: 'https://horizonvalleycleaning.com/areas/marin-county',
-            telephone: '(707-972-4525',
+            telephone: '(707) 972-4525',
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Marin County',
@@ -90,7 +90,7 @@ export default function MarinCountyPage() {
               href="tel:707-972-4525"
               className="bg-horizon-white hover:bg-gray-100 text-green-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center"
             >
-              📞 Call (707-972-4525
+              📞 Call (707) 972-4525
             </a>
           </div>
 
@@ -273,7 +273,7 @@ export default function MarinCountyPage() {
               href="tel:707-972-4525"
               className="inline-block bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors"
             >
-              Call Now for Marin Service: (707-972-4525
+              Call Now for Marin Service: (707) 972-4525
             </a>
           </div>
         </div>
@@ -319,7 +319,7 @@ export default function MarinCountyPage() {
                 How quickly can you service my Marin property?
               </h3>
               <p className="text-horizon-slate">
-                We offer same-week service for most Marin County locations. Call us at (707-972-4525 and we&apos;ll check availability for your area.
+                We offer same-week service for most Marin County locations. Call us at (707) 972-4525 and we&apos;ll check availability for your area.
               </p>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function MarinCountyPage() {
               href="tel:707-972-4525"
               className="bg-green-900 hover:bg-green-950 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors border-2 border-white"
             >
-              📞 (707-972-4525
+              📞 (707) 972-4525
             </a>
           </div>
           <p className="mt-8 text-sm text-green-200">
