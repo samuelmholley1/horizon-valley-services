@@ -13,14 +13,12 @@ export default function Home() {
       <section id="main-content" className="relative bg-gradient-to-b from-horizon-black via-gray-900 to-horizon-charcoal py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-64 h-64 mx-auto mb-6 relative overflow-hidden">
-              <Image 
+            <div className="mx-auto mb-6 flex justify-center">
+              <img 
                 src="/HV_logo.png" 
                 alt="Horizon Valley Services" 
-                fill
-                className="object-contain"
-                priority
-                style={{ objectFit: 'contain' }}
+                className="w-auto h-auto max-w-full"
+                style={{ maxHeight: '512px' }}
               />
             </div>
           </div>
