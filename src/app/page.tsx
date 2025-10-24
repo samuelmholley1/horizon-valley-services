@@ -215,11 +215,11 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-20 bg-horizon-cream">
+      <section id="team" className="py-20 bg-horizon-charcoal">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-horizon-black mb-6">Meet Our Team</h3>
-            <p className="text-lg text-horizon-slate leading-relaxed">
+            <h3 className="text-4xl font-bold text-horizon-white mb-6">Meet Our Team</h3>
+            <p className="text-lg text-gray-300 leading-relaxed">
               Founded and operated by four dedicated professionals committed to excellence and 
               proudly serving the greater Bay Area and Northern California.
             </p>
@@ -231,67 +231,16 @@ export default function Home() {
               { name: 'Caleb White', role: 'Co-Founder & Services' },
               { name: 'Hudson Ford', role: 'Co-Founder & Client Relations' },
             ].map((member) => (
-              <div key={member.name} className="text-center bg-horizon-white p-6 rounded-xl shadow-lg border border-gray-100">
-                <div className="w-24 h-24 bg-horizon-black rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <svg className="w-12 h-12 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div key={member.name} className="text-center bg-gray-900 p-6 rounded-xl shadow-lg border-2 border-gray-800 hover:border-blue-600 transition-all">
+                <div className="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                  <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-horizon-black mb-2">{member.name}</h4>
-                <p className="text-horizon-stone text-sm">{member.role}</p>
+                <h4 className="text-lg font-semibold text-horizon-white mb-2">{member.name}</h4>
+                <p className="text-gray-400 text-sm">{member.role}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Service Area Section */}
-            {/* Why Choose Us Section */}
-      <section className="py-20 px-4 bg-horizon-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-horizon-black mb-4">
-            Why Choose Horizon Valley?
-          </h2>
-          <p className="text-center text-horizon-slate mb-12 max-w-2xl mx-auto">
-            Local expertise, professional service, and a commitment to excellence that sets us apart
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
-              <div className="w-12 h-12 bg-green-500 rounded-lg mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold text-horizon-black mb-2">Free Estimates</h4>
-              <p className="text-horizon-slate text-sm">No-obligation quotes for all services. Know exactly what to expect before we start.</p>
-            </div>
-            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
-              <div className="w-12 h-12 bg-blue-500 rounded-lg mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold text-horizon-black mb-2">Fast Scheduling</h4>
-              <p className="text-horizon-slate text-sm">Most jobs scheduled within days, not weeks. We respect your time and work efficiently.</p>
-            </div>
-            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
-              <div className="w-12 h-12 bg-purple-500 rounded-lg mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold text-horizon-black mb-2">Local Team</h4>
-              <p className="text-horizon-slate text-sm">Bay Area founded and operated. We know the area and care about our community.</p>
-            </div>
-            <div className="bg-horizon-cream p-6 rounded-xl border-2 border-horizon-warm hover:border-horizon-black transition-all hover:shadow-lg">
-              <div className="w-12 h-12 bg-orange-500 rounded-lg mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold text-horizon-black mb-2">Quality Guaranteed</h4>
-              <p className="text-horizon-slate text-sm">100% satisfaction guarantee. We fix any issues promptly at no extra charge.</p>
-            </div>
           </div>
         </div>
       </section>
