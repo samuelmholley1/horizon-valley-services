@@ -21,14 +21,11 @@ export default function Header() {
                 className="object-contain"
               />
             </div>
-            <Image 
+            <img 
               src="/HV_logo_text.png" 
               alt="Horizon Valley Services" 
-              width={200}
-              height={32}
-              className="h-8 w-auto object-contain"
-              quality={100}
-              priority
+              className="h-8 w-auto"
+              style={{ imageRendering: 'crisp-edges' }}
             />
           </Link>
 
