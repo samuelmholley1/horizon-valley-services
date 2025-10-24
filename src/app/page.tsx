@@ -63,63 +63,63 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-horizon-warm to-horizon-cream">
+      <section className="py-16 px-4 bg-horizon-charcoal">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-horizon-black mb-4">
+          <h2 className="text-4xl font-bold text-center text-horizon-white mb-4">
             Why Choose Horizon Valley Services?
           </h2>
-          <p className="text-center text-horizon-slate mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
             We&apos;re not just another service company. Here&apos;s what makes us different:
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
-              <div className="w-14 h-14 bg-green-500 rounded-lg mb-4 flex items-center justify-center">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border-2 border-gray-800 hover:border-blue-600 transition-all">
+              <div className="w-14 h-14 bg-blue-600 rounded-lg mb-4 flex items-center justify-center shadow-lg shadow-blue-600/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               </div>
-              <h4 className="font-bold text-lg text-horizon-black mb-2">Family Owned & Operated</h4>
-              <p className="text-sm text-horizon-slate">Local business run by 4 partners who care about our community and your satisfaction.</p>
+              <h4 className="font-bold text-lg text-horizon-white mb-2">Family Owned & Operated</h4>
+              <p className="text-sm text-gray-400">Local business run by 4 partners who care about our community and your satisfaction.</p>
             </div>
 
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
-              <div className="w-14 h-14 bg-blue-500 rounded-lg mb-4 flex items-center justify-center">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border-2 border-gray-800 hover:border-blue-600 transition-all">
+              <div className="w-14 h-14 bg-blue-600 rounded-lg mb-4 flex items-center justify-center shadow-lg shadow-blue-600/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h4 className="font-bold text-lg text-horizon-black mb-2">Transparent Pricing</h4>
-              <p className="text-sm text-horizon-slate">Free estimates with no hidden fees. You know exactly what you&apos;ll pay before we start.</p>
+              <h4 className="font-bold text-lg text-horizon-white mb-2">Transparent Pricing</h4>
+              <p className="text-sm text-gray-400">Free estimates with no hidden fees. You know exactly what you&apos;ll pay before we start.</p>
             </div>
 
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
-              <div className="w-14 h-14 bg-purple-500 rounded-lg mb-4 flex items-center justify-center">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border-2 border-gray-800 hover:border-blue-600 transition-all">
+              <div className="w-14 h-14 bg-blue-600 rounded-lg mb-4 flex items-center justify-center shadow-lg shadow-blue-600/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h4 className="font-bold text-lg text-horizon-black mb-2">100% Satisfaction Guaranteed</h4>
-              <p className="text-sm text-horizon-slate">Not happy? We&apos;ll make it right at no extra charge. Your satisfaction is our priority.</p>
+              <h4 className="font-bold text-lg text-horizon-white mb-2">100% Satisfaction Guaranteed</h4>
+              <p className="text-sm text-gray-400">Not happy? We&apos;ll make it right at no extra charge. Your satisfaction is our priority.</p>
             </div>
 
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
-              <div className="w-14 h-14 bg-orange-500 rounded-lg mb-4 flex items-center justify-center">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border-2 border-gray-800 hover:border-blue-600 transition-all">
+              <div className="w-14 h-14 bg-blue-600 rounded-lg mb-4 flex items-center justify-center shadow-lg shadow-blue-600/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h4 className="font-bold text-lg text-horizon-black mb-2">Proudly Serving Bay Area</h4>
-              <p className="text-sm text-horizon-slate">From San Francisco to Mendocino County. We know Northern California properties inside and out.</p>
+              <h4 className="font-bold text-lg text-horizon-white mb-2">Proudly Serving Bay Area</h4>
+              <p className="text-sm text-gray-400">From San Francisco to Mendocino County. We know Northern California properties inside and out.</p>
             </div>
           </div>
 
-          <div className="mt-12 bg-horizon-black text-horizon-white p-8 rounded-2xl text-center">
+          <div className="mt-12 bg-blue-600 text-white p-8 rounded-2xl text-center shadow-2xl shadow-blue-600/30">
             <h3 className="text-2xl font-bold mb-3">🎯 Same-Week Service Available</h3>
-            <p className="text-lg mb-6 text-gray-300">Most competitors book 2-3 weeks out. We get to you faster.</p>
+            <p className="text-lg mb-6 text-blue-50">Most competitors book 2-3 weeks out. We get to you faster.</p>
             <Link 
               href="/quote" 
-              className="inline-block bg-horizon-white text-horizon-black px-8 py-4 rounded-lg font-bold hover:bg-horizon-warm transition-all shadow-lg"
+              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg"
             >
               Get Your Free Quote Today →
             </Link>
