@@ -34,9 +34,9 @@ export default function QuotePage() {
       const embedDiv = document.getElementById('calendly-embed')
       
       if (skeleton && embedDiv) {
-        // Poll for iframe and wait for it to have substantial height (Calendly loaded)
+        // Wait longer for Calendly to fully render
         let checkCount = 0
-        const maxChecks = 100 // Max 10 seconds (100 * 100ms)
+        const maxChecks = 150 // Max 15 seconds (150 * 100ms)
         
         const checkCalendlyReady = () => {
           const iframe = embedDiv.querySelector('iframe')
@@ -49,22 +49,24 @@ export default function QuotePage() {
             return
           }
           
-          // Check if iframe has substantial height (indicates Calendly content is loaded)
+          // Wait for iframe to have content loaded (check multiple conditions)
           const iframeHeight = iframe.offsetHeight
+          const hasLoaded = iframe.contentWindow && iframeHeight > 600
           
-          if (iframeHeight > 500) {
-            // Calendly is ready!
-            embedDiv.classList.add('calendly-loaded')
-            // Small delay for smooth transition
+          if (hasLoaded) {
+            // Extra delay to ensure content is fully rendered
             setTimeout(() => {
-              skeleton.remove()
-            }, 300)
+              embedDiv.classList.add('calendly-loaded')
+              setTimeout(() => {
+                skeleton.remove()
+              }, 500)
+            }, 1000)
           } else if (checkCount < maxChecks) {
             // Keep checking
             checkCount++
             setTimeout(checkCalendlyReady, 100)
           } else {
-            // Timeout fallback
+            // Timeout fallback - show Calendly anyway
             embedDiv.classList.add('calendly-loaded')
             skeleton.remove()
           }
@@ -368,17 +370,25 @@ export default function QuotePage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-horizon-white mb-4">
-              Not Ready to Schedule?
+              Prefer a Call Back?
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Fill out this form and we&#39;ll call you back at your convenience
+              We recommend scheduling a consultation above for the fastest response
             </p>
             <p className="text-sm text-gray-400 mt-3 italic">
-              Online form submissions coming soon - For now, please call us at <a href="tel:7079724525" className="text-blue-400 hover:underline font-semibold">(707) 972-4525</a>
+              Online form coming soon - Or call us directly at <a href="tel:7079724525" className="text-blue-400 hover:underline font-semibold">(707) 972-4525</a>
             </p>
           </div>
 
-          <div className="bg-gray-900 p-8 md:p-12 rounded-xl shadow-lg border border-gray-800 opacity-60 pointer-events-none">
+          <div className="relative">
+            {/* Disabled Overlay */}
+            <div className="absolute inset-0 bg-horizon-black/40 backdrop-blur-[2px] z-10 rounded-xl flex items-center justify-center">
+              <div className="bg-gray-900 px-8 py-4 rounded-lg border-2 border-gray-700">
+                <p className="text-gray-300 text-lg font-semibold">Coming Soon</p>
+              </div>
+            </div>
+            
+            <div className="bg-gray-900 p-8 md:p-12 rounded-xl shadow-lg border border-gray-800">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
             <div>
@@ -526,6 +536,7 @@ export default function QuotePage() {
                 We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:7079724525" className="text-blue-400 hover:underline">(707) 972-4525</a>
               </p>
             </form>
+          </div>
           </div>
         </div>
       </section>
