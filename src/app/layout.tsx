@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Horizon Valley Services LLC',
     images: [
       {
-        url: '/HV_logo.jpeg',
+        url: '/HV_logo.png',
         width: 1200,
         height: 630,
         alt: 'Horizon Valley Services LLC Logo',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Horizon Valley Services LLC - Full-Service Property Care',
     description: 'Power washing, window cleaning, gutter cleaning, junk removal, moving, and tree trimming serving the Bay Area and Northern California. Call (707) 972-4525 for a free quote.',
-    images: ['/HV_logo.jpeg'],
+    images: ['/HV_logo.png'],
   },
   robots: {
     index: true,
@@ -52,9 +52,18 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/HV_icon.jpeg',
-    shortcut: '/HV_icon.jpeg',
-    apple: '/HV_icon.jpeg',
+    icon: [
+      { url: '/HV_icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/HV_icon.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/HV_icon.png',
+    apple: [
+      { url: '/HV_icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'icon', url: '/HV_icon.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'icon', url: '/HV_icon.png', sizes: '512x512', type: 'image/png' },
+    ],
   },
   verification: {
     // Add Google Search Console verification here when available

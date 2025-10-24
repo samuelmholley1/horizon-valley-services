@@ -13,9 +13,9 @@ export default function Home() {
       <section id="main-content" className="relative bg-gradient-to-b from-horizon-black via-gray-900 to-horizon-charcoal py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-24 h-24 mx-auto mb-6 relative">
+            <div className="w-32 h-32 mx-auto mb-6 relative">
               <Image 
-                src="/HV_logo.jpeg" 
+                src="/HV_icon.png" 
                 alt="Horizon Valley Services" 
                 fill
                 className="object-contain"

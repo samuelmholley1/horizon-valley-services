@@ -12,20 +12,22 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-4 hover:opacity-90 transition-opacity">
-            <div className="w-12 h-12 relative">
+          <Link href="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity">
+            <div className="w-12 h-12 relative flex-shrink-0">
               <Image 
-                src="/HV_logo.jpeg" 
-                alt="Horizon Valley Services Logo" 
+                src="/HV_icon.png" 
+                alt="Horizon Valley Services Icon" 
                 fill
-                className="object-contain rounded"
+                className="object-contain"
               />
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-horizon-white tracking-tight">
-                Horizon Valley Services
-              </h1>
-              <p className="text-xs text-gray-400 font-medium">LLC</p>
+            <div className="h-8 w-auto relative" style={{ width: '200px' }}>
+              <Image 
+                src="/HV_logo_text.png" 
+                alt="Horizon Valley Services" 
+                fill
+                className="object-contain object-left"
+              />
             </div>
           </Link>
 
