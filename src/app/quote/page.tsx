@@ -25,62 +25,55 @@ export default function QuotePage() {
   useEffect(() => {
     const script = document.createElement('script')
     script.src = 'https://assets.calendly.com/assets/external/widget.js'
-    script.async = false // Load synchronously to ensure Calendly object exists
-    document.head.appendChild(script)
-
-    // Initialize Calendly after script loads
-    script.onload = () => {
-      const skeleton = document.getElementById('skeleton-loader')
-      const embedDiv = document.getElementById('calendly-embed')
-      
-      if (skeleton && embedDiv) {
-        // Wait longer for Calendly to fully render
-        let checkCount = 0
-        const maxChecks = 150 // Max 15 seconds (150 * 100ms)
-        
-        const checkCalendlyReady = () => {
-          const iframe = embedDiv.querySelector('iframe')
+    script.async = false
+    
+    let isCalendlyReady = false
+    
+    // Listen for Calendly's ready event
+    const handleCalendlyEvent = (e: MessageEvent) => {
+      if (e.data.event && e.data.event.indexOf('calendly') === 0) {
+        if (!isCalendlyReady) {
+          isCalendlyReady = true
           
-          if (!iframe) {
-            if (checkCount < maxChecks) {
-              checkCount++
-              setTimeout(checkCalendlyReady, 100)
-            }
-            return
-          }
+          const skeleton = document.getElementById('skeleton-loader')
+          const embedDiv = document.getElementById('calendly-embed')
           
-          // Wait for iframe to have content loaded (check multiple conditions)
-          const iframeHeight = iframe.offsetHeight
-          const hasLoaded = iframe.contentWindow && iframeHeight > 600
-          
-          if (hasLoaded) {
-            // Extra delay to ensure content is fully rendered
+          if (skeleton && embedDiv) {
+            // Wait a bit extra to ensure full render
             setTimeout(() => {
               embedDiv.classList.add('calendly-loaded')
               setTimeout(() => {
                 skeleton.remove()
-              }, 500)
-            }, 1000)
-          } else if (checkCount < maxChecks) {
-            // Keep checking
-            checkCount++
-            setTimeout(checkCalendlyReady, 100)
-          } else {
-            // Timeout fallback - show Calendly anyway
+              }, 300)
+            }, 800)
+          }
+        }
+      }
+    }
+    
+    window.addEventListener('message', handleCalendlyEvent)
+    
+    script.onload = () => {
+      // Fallback: if no event received after 20 seconds, show anyway
+      setTimeout(() => {
+        if (!isCalendlyReady) {
+          const skeleton = document.getElementById('skeleton-loader')
+          const embedDiv = document.getElementById('calendly-embed')
+          
+          if (skeleton && embedDiv) {
             embedDiv.classList.add('calendly-loaded')
             skeleton.remove()
           }
         }
-        
-        checkCalendlyReady()
-      }
+      }, 20000)
     }
-
+    
+    document.body.appendChild(script)
+    
     return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')
-      if (existingScript) {
-        existingScript.remove()
+      window.removeEventListener('message', handleCalendlyEvent)
+      if (document.body.contains(script)) {
+        document.body.removeChild(script)
       }
     }
   }, [])
