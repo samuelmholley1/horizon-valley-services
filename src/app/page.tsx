@@ -277,8 +277,93 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Guarantees Section */}
+      <section className="py-16 bg-horizon-cream border-y-2 border-horizon-black/10">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="w-16 h-16 bg-horizon-black rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-horizon-black mb-2">Satisfaction Guaranteed</h4>
+              <p className="text-horizon-slate">We don&#39;t rest until you&#39;re completely satisfied with our work</p>
+            </div>
+            <div>
+              <div className="w-16 h-16 bg-horizon-black rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-horizon-black mb-2">Reliable & On Time</h4>
+              <p className="text-horizon-slate">Punctual service you can count on, every single time</p>
+            </div>
+            <div>
+              <div className="w-16 h-16 bg-horizon-black rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-horizon-black mb-2">Locally Owned & Operated</h4>
+              <p className="text-horizon-slate">Your neighbors, committed to our community</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-horizon-warm">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl font-bold text-horizon-black mb-6">Frequently Asked Questions</h3>
+            <p className="text-lg text-horizon-slate leading-relaxed">
+              Quick answers to common questions about our services
+            </p>
+          </div>
+          <div className="space-y-6">
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
+              <h4 className="text-xl font-semibold text-horizon-black mb-3">What areas do you serve?</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties. If you&#39;re unsure whether we cover your area, give us a call at (559) 960-2749 and we&#39;ll let you know!
+              </p>
+            </div>
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
+              <h4 className="text-xl font-semibold text-horizon-black mb-3">Do you offer free estimates?</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                Yes! We provide free, no-obligation quotes for all our services. You can schedule a consultation through our website or call us directly.
+              </p>
+            </div>
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
+              <h4 className="text-xl font-semibold text-horizon-black mb-3">Are you licensed and insured?</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                Absolutely. We are fully licensed and insured to protect both our team and your property. Your peace of mind is our priority.
+              </p>
+            </div>
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
+              <h4 className="text-xl font-semibold text-horizon-black mb-3">What payment methods do you accept?</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                We accept cash, checks, and all major credit cards for your convenience. Payment is typically due upon completion of service.
+              </p>
+            </div>
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
+              <h4 className="text-xl font-semibold text-horizon-black mb-3">How quickly can you start a project?</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                Most projects can be scheduled within a few days to a week, depending on our current workload and the scope of your project. For urgent needs, we do our best to accommodate same-day or next-day service.
+              </p>
+            </div>
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
+              <h4 className="text-xl font-semibold text-horizon-black mb-3">Do I need to be home during the service?</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                For most exterior services like power washing, gutter cleaning, and tree trimming, you don&#39;t need to be present. For moving services or interior work, we&#39;ll coordinate access with you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-horizon-warm">
+      <section id="contact" className="py-20 bg-horizon-cream">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h3 className="text-4xl font-bold text-horizon-black mb-6">Get In Touch</h3>
           <p className="text-lg mb-12 text-horizon-slate max-w-2xl mx-auto leading-relaxed">
@@ -344,24 +429,53 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-horizon-charcoal text-horizon-white py-12">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <div className="mb-6">
-            <div className="w-16 h-16 mx-auto mb-4 relative">
-              <Image 
-                src="/HV_logo.jpeg" 
-                alt="Horizon Valley Services" 
-                fill
-                className="object-contain"
-              />
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            {/* Company Info */}
+            <div className="text-center md:text-left">
+              <div className="w-16 h-16 mb-4 relative mx-auto md:mx-0">
+                <Image 
+                  src="/HV_logo.jpeg" 
+                  alt="Horizon Valley Services" 
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Horizon Valley Services</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Full-service property care serving the Bay Area and Northern California
+              </p>
             </div>
-            <h2 className="text-2xl font-bold mb-2">Horizon Valley Services LLC</h2>
+
+            {/* Quick Links */}
+            <div className="text-center">
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <div className="space-y-2">
+                <div><a href="#services" className="text-gray-400 hover:text-horizon-white transition-colors">Services</a></div>
+                <div><a href="#team" className="text-gray-400 hover:text-horizon-white transition-colors">Our Team</a></div>
+                <div><Link href="/quote" className="text-gray-400 hover:text-horizon-white transition-colors">Get a Quote</Link></div>
+                <div><a href="#contact" className="text-gray-400 hover:text-horizon-white transition-colors">Contact</a></div>
+              </div>
+            </div>
+
+            {/* Contact & Legal */}
+            <div className="text-center md:text-right">
+              <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
+              <div className="space-y-2 text-gray-400 text-sm">
+                <p><a href="tel:559-960-2749" className="hover:text-horizon-white transition-colors">(559) 960-2749</a></p>
+                <p><a href="mailto:owners@horizonvalleycleaning.com" className="hover:text-horizon-white transition-colors">owners@horizonvalleycleaning.com</a></p>
+                <p className="mt-4 pt-4 border-t border-gray-600">
+                  <Link href="/privacy" className="hover:text-horizon-white transition-colors">Privacy Policy</Link>
+                  {' · '}
+                  <Link href="/terms" className="hover:text-horizon-white transition-colors">Terms of Service</Link>
+                </p>
+              </div>
+            </div>
           </div>
-          <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-            Professional exterior cleaning and maintenance services proudly serving Northern California&#39;s wine country
-          </p>
-          <div className="border-t border-gray-600 pt-6">
+
+          <div className="border-t border-gray-600 pt-6 text-center">
             <p className="text-gray-500 text-sm">
-              © 2025 Horizon Valley Services LLC. All rights reserved.
+              © 2025 Horizon Valley Services LLC. All rights reserved. | Licensed & Insured
             </p>
           </div>
         </div>

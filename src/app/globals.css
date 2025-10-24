@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Better focus states for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-horizon-black;
+  }
+  
+  /* Improve button and link hover states */
+  a, button {
+    @apply transition-all duration-300;
+  }
+}
