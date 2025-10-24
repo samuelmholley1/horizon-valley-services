@@ -326,6 +326,133 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Schema.org Structured Data for Local SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://horizonvalleycleaning.com",
+            "name": "Horizon Valley Services LLC",
+            "image": "https://horizonvalleycleaning.com/HV_logo.jpeg",
+            "description": "Professional exterior cleaning and maintenance services serving Mendocino, Lake, and Sonoma counties in Northern California. Specializing in pressure washing, gutter cleaning, window washing, and property maintenance.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ukiah",
+              "addressRegion": "CA",
+              "postalCode": "95482",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.1502,
+              "longitude": -123.2078
+            },
+            "telephone": "+15599602749",
+            "email": "owners@horizonvalleycleaning.com",
+            "url": "https://horizonvalleycleaning.com",
+            "priceRange": "$$",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Ukiah",
+                "containedInPlace": {
+                  "@type": "AdministrativeArea",
+                  "name": "California"
+                }
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Mendocino County",
+                "containedInPlace": {
+                  "@type": "AdministrativeArea",
+                  "name": "California"
+                }
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Lake County",
+                "containedInPlace": {
+                  "@type": "AdministrativeArea",
+                  "name": "California"
+                }
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Sonoma County",
+                "containedInPlace": {
+                  "@type": "AdministrativeArea",
+                  "name": "California"
+                }
+              }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "17:00"
+              }
+            ],
+            "founder": [
+              {
+                "@type": "Person",
+                "name": "Cody White"
+              },
+              {
+                "@type": "Person",
+                "name": "Treyton Scott"
+              },
+              {
+                "@type": "Person",
+                "name": "Caleb White"
+              },
+              {
+                "@type": "Person",
+                "name": "Hudson Ford"
+              }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Exterior Cleaning Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Pressure Washing",
+                    "description": "Professional pressure washing for driveways, walkways, decks, and exterior surfaces"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gutter Cleaning",
+                    "description": "Thorough gutter cleaning and maintenance to protect your property"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Window Washing",
+                    "description": "Crystal clear window cleaning for residential and commercial properties"
+                  }
+                }
+              ]
+            }
+          })
+        }}
+      />
     </main>
   )
 }
