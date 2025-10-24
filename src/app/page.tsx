@@ -142,6 +142,71 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-horizon-cream to-transparent"></div>
       </section>
 
+      {/* Why Choose Us Section */}
+      <section className="py-16 px-4 bg-gradient-to-b from-horizon-warm to-horizon-cream">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-horizon-black mb-4">
+            Why Choose Horizon Valley Services?
+          </h2>
+          <p className="text-center text-horizon-slate mb-12 max-w-2xl mx-auto">
+            We&apos;re not just another service company. Here&apos;s what makes us different:
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
+              <div className="w-14 h-14 bg-green-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h4 className="font-bold text-lg text-horizon-black mb-2">Family Owned & Operated</h4>
+              <p className="text-sm text-horizon-slate">Local business run by 4 partners who care about our community and your satisfaction.</p>
+            </div>
+
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
+              <div className="w-14 h-14 bg-blue-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="font-bold text-lg text-horizon-black mb-2">Transparent Pricing</h4>
+              <p className="text-sm text-horizon-slate">Free estimates with no hidden fees. You know exactly what you&apos;ll pay before we start.</p>
+            </div>
+
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
+              <div className="w-14 h-14 bg-purple-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h4 className="font-bold text-lg text-horizon-black mb-2">100% Satisfaction Guaranteed</h4>
+              <p className="text-sm text-horizon-slate">Not happy? We&apos;ll make it right at no extra charge. Your satisfaction is our priority.</p>
+            </div>
+
+            <div className="bg-horizon-white p-6 rounded-xl shadow-md border-2 border-horizon-black/5 hover:border-horizon-black/20 transition-all">
+              <div className="w-14 h-14 bg-orange-500 rounded-lg mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h4 className="font-bold text-lg text-horizon-black mb-2">Proudly Serving Bay Area</h4>
+              <p className="text-sm text-horizon-slate">From San Francisco to Mendocino County. We know Northern California properties inside and out.</p>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-horizon-black text-horizon-white p-8 rounded-2xl text-center">
+            <h3 className="text-2xl font-bold mb-3">🎯 Same-Week Service Available</h3>
+            <p className="text-lg mb-6 text-gray-300">Most competitors book 2-3 weeks out. We get to you faster.</p>
+            <Link 
+              href="/quote" 
+              className="inline-block bg-horizon-white text-horizon-black px-8 py-4 rounded-lg font-bold hover:bg-horizon-warm transition-all shadow-lg"
+            >
+              Get Your Free Quote Today →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 bg-horizon-warm">
         <div className="max-w-6xl mx-auto px-4">
@@ -379,6 +444,55 @@ export default function Home() {
               <h4 className="text-xl font-bold text-horizon-black mb-2">Locally Owned & Operated</h4>
               <p className="text-horizon-slate">Your neighbors, committed to our community</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Placeholder Section */}
+      <section className="py-16 px-4 bg-horizon-black text-horizon-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">What Our Customers Say</h2>
+          <p className="text-gray-400 mb-12 max-w-2xl mx-auto">
+            We&apos;re just getting started, but we&apos;re already making neighbors happy across the Bay Area
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-horizon-charcoal p-8 rounded-xl">
+              <div className="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+              <p className="text-gray-300 italic mb-4">
+                &quot;The team was professional, on time, and did an amazing job on our home. Will definitely use them again!&quot;
+              </p>
+              <p className="text-gray-500 text-sm">- Coming Soon</p>
+            </div>
+
+            <div className="bg-horizon-charcoal p-8 rounded-xl">
+              <div className="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+              <p className="text-gray-300 italic mb-4">
+                &quot;Fast, affordable, and excellent quality. Exactly what we needed for our property.&quot;
+              </p>
+              <p className="text-gray-500 text-sm">- Coming Soon</p>
+            </div>
+
+            <div className="bg-horizon-charcoal p-8 rounded-xl">
+              <div className="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+              <p className="text-gray-300 italic mb-4">
+                &quot;Highly recommend! They went above and beyond to make sure everything was perfect.&quot;
+              </p>
+              <p className="text-gray-500 text-sm">- Coming Soon</p>
+            </div>
+          </div>
+
+          <div className="bg-horizon-white text-horizon-black p-6 rounded-xl max-w-2xl mx-auto">
+            <h3 className="font-bold text-xl mb-2">✨ Be Our Next Happy Customer</h3>
+            <p className="text-horizon-slate mb-4">
+              Join our growing list of satisfied customers across San Francisco, Marin, Sonoma, and Mendocino counties
+            </p>
+            <a 
+              href="tel:5599602749" 
+              className="inline-block bg-horizon-black text-horizon-white px-8 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition-colors"
+            >
+              Call (559) 960-2749 Now
+            </a>
           </div>
         </div>
       </section>
