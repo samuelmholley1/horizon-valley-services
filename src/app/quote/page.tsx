@@ -17,17 +17,60 @@ export default function QuotePage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  const [errors, setErrors] = useState<{[key: string]: string}>({});
+
+  const validateForm = () => {
+    const newErrors: {[key: string]: string} = {};
     
-    // TODO: Add actual form submission logic here
-    // For now, just simulate success after 1 second
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitSuccess(true)
-    }, 1000)
-  }
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+    
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    } else if (!/^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/.test(formData.phone)) {
+      newErrors.phone = "Please enter a valid phone number";
+    }
+    
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+    
+    if (!formData.serviceType) {
+      newErrors.serviceType = "Please select a service";
+    }
+    
+    if (!formData.address.trim()) {
+      newErrors.address = "Address is required";
+    }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+    
+    setIsSubmitting(true);
+    setErrors({});
+    
+    try {
+      // Simulate form submission
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      
+      setSubmitSuccess(true);
+    } catch (error) {
+      setErrors({ submit: "Something went wrong. Please try again or call us at (559) 960-2749." });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -197,23 +240,25 @@ export default function QuotePage() {
           <div className="bg-horizon-white p-8 md:p-12 rounded-xl shadow-lg border border-gray-100">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-horizon-black mb-2">
-                    Your Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition"
-                    placeholder="John Doe"
-                  />
-                </div>
-
-                <div>
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-horizon-charcoal mb-2">
+                Full Name *
+              </label>
+              <input
+                type="text"
+                id="name"
+                required
+                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-horizon-charcoal focus:border-transparent ${
+                  errors.name ? 'border-red-500' : 'border-horizon-slate'
+                }`}
+                value={formData.name}
+                onChange={(e) => {
+                  setFormData({ ...formData, name: e.target.value });
+                  if (errors.name) setErrors({ ...errors, name: '' });
+                }}
+              />
+              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+            </div>                <div>
                   <label htmlFor="phone" className="block text-sm font-semibold text-horizon-black mb-2">
                     Phone Number *
                   </label>
@@ -231,23 +276,26 @@ export default function QuotePage() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-horizon-black mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition"
-                    placeholder="john@example.com"
-                  />
-                </div>
-
-                <div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-horizon-charcoal mb-2">
+                Email Address *
+              </label>
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="you@example.com"
+                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-horizon-charcoal focus:border-transparent ${
+                  errors.email ? 'border-red-500' : 'border-horizon-slate'
+                }`}
+                value={formData.email}
+                onChange={(e) => {
+                  setFormData({ ...formData, email: e.target.value });
+                  if (errors.email) setErrors({ ...errors, email: '' });
+                }}
+              />
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            </div>                <div>
                   <label htmlFor="serviceType" className="block text-sm font-semibold text-horizon-black mb-2">
                     Service Needed *
                   </label>
@@ -272,23 +320,26 @@ export default function QuotePage() {
                 </div>
               </div>
 
-              <div>
-                <label htmlFor="address" className="block text-sm font-semibold text-horizon-black mb-2">
-                  Property Address *
-                </label>
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  required
-                  value={formData.address}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition"
-                  placeholder="123 Main St, Ukiah, CA 95482"
-                />
-              </div>
-
-              <div>
+            <div>
+              <label htmlFor="address" className="block text-sm font-medium text-horizon-charcoal mb-2">
+                Property Address *
+              </label>
+              <input
+                type="text"
+                id="address"
+                required
+                placeholder="123 Main St, City, CA 94XXX"
+                className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-horizon-charcoal focus:border-transparent ${
+                  errors.address ? 'border-red-500' : 'border-horizon-slate'
+                }`}
+                value={formData.address}
+                onChange={(e) => {
+                  setFormData({ ...formData, address: e.target.value });
+                  if (errors.address) setErrors({ ...errors, address: '' });
+                }}
+              />
+              {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
+            </div>              <div>
                 <label htmlFor="description" className="block text-sm font-semibold text-horizon-black mb-2">
                   Brief Description of Work Needed
                 </label>

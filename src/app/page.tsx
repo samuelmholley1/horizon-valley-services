@@ -90,9 +90,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-horizon-black text-horizon-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-rural-texture opacity-10"></div>
-        <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <section id="main-content" className="relative bg-gradient-to-b from-horizon-cream to-horizon-warm py-20 px-4">
+        <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
             <div className="w-24 h-24 mx-auto mb-6 relative">
               <Image 
@@ -468,6 +467,8 @@ export default function Home() {
                   <Link href="/privacy" className="hover:text-horizon-white transition-colors">Privacy Policy</Link>
                   {' · '}
                   <Link href="/terms" className="hover:text-horizon-white transition-colors">Terms of Service</Link>
+                  {' · '}
+                  <Link href="/privacy#california-privacy" className="hover:text-horizon-white transition-colors">CA Privacy Rights</Link>
                 </p>
               </div>
             </div>
@@ -629,6 +630,67 @@ export default function Home() {
               ]
             }
           })
+        }}
+      />
+
+      {/* FAQ Schema.org Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What areas do you serve?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties in Northern California. Contact us to confirm we service your specific location."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide free estimates?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! We offer free, no-obligation estimates for all our services. You can request a quote online or call us at (559) 960-2749."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are you licensed and insured?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. Horizon Valley Services is fully licensed and insured for your protection and peace of mind."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What payment methods do you accept?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We accept cash, checks, and all major credit cards. Payment is typically due upon completion of service."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How quickly can you schedule service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We strive to accommodate your schedule as quickly as possible. Depending on the season and demand, we can often schedule service within a few days to a week."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to be home during service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For most exterior services like power washing and gutter cleaning, you don't need to be home. For interior work like window cleaning, we'll coordinate access with you in advance."
+                }
+              }
+            ]
+          }),
         }}
       />
     </main>

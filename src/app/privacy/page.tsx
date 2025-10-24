@@ -117,10 +117,32 @@ export default function PrivacyPage() {
             </p>
           </div>
 
-          <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100">
+          <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100" id="california-privacy">
+            <h2 className="text-2xl font-bold text-horizon-black mb-4">Your California Privacy Rights (CCPA)</h2>
+            <p className="text-horizon-slate leading-relaxed mb-4">
+              If you are a California resident, the California Consumer Privacy Act (CCPA) provides you with specific rights regarding your personal information:
+            </p>
+            <ul className="list-disc list-inside text-horizon-slate mb-4 space-y-2">
+              <li><strong>Right to Know:</strong> You can request details about the personal information we collect, use, disclose, or sell.</li>
+              <li><strong>Right to Delete:</strong> You can request deletion of your personal information, subject to certain exceptions.</li>
+              <li><strong>Right to Opt-Out:</strong> You have the right to opt out of the sale of your personal information.</li>
+              <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your CCPA rights.</li>
+            </ul>
+            <div className="bg-green-50 border border-green-200 p-4 rounded-lg mb-4">
+              <p className="text-horizon-charcoal font-semibold mb-2">✓ We Do NOT Sell Your Personal Information</p>
+              <p className="text-horizon-slate text-sm">
+                Horizon Valley Services does not sell personal information to third parties. We only share information with service providers necessary to operate our business (scheduling, payment processing, communication).
+              </p>
+            </div>
+            <p className="text-horizon-slate mb-4">
+              To exercise any of your CCPA rights, please contact us using the information below.
+            </p>
+          </div>
+
+          <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 mt-8">
             <h2 className="text-2xl font-bold text-horizon-black mb-4">Contact Us</h2>
             <p className="text-horizon-slate leading-relaxed mb-4">
-              If you have questions about this Privacy Policy, please contact us:
+              If you have questions about this Privacy Policy or wish to exercise your California privacy rights, please contact us:
             </p>
             <div className="space-y-2 text-horizon-slate">
               <p><strong>Email:</strong> <a href="mailto:owners@horizonvalleycleaning.com" className="text-horizon-black hover:underline">owners@horizonvalleycleaning.com</a></p>
