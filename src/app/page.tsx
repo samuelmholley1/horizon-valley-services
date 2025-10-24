@@ -128,84 +128,84 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-horizon-warm">
+      <section id="services" className="py-20 bg-horizon-black">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-horizon-black mb-6">Our Services</h3>
-            <p className="text-lg text-horizon-slate max-w-2xl mx-auto leading-relaxed">
+            <h3 className="text-4xl font-bold text-horizon-white mb-6">Our Services</h3>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Comprehensive property services for residential and commercial clients across San Francisco, 
               Marin, Sonoma, and Mendocino counties.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800 hover:shadow-xl hover:border-blue-600 transition-all">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Power Washing</h4>
-              <p className="text-horizon-slate leading-relaxed">
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-white">Power Washing</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Professional power washing for driveways, sidewalks, decks, and building exteriors. 
                 Remove years of buildup and restore your property&#39;s appearance.
               </p>
             </div>
-            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800 hover:shadow-xl hover:border-blue-600 transition-all">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Window Cleaning</h4>
-              <p className="text-horizon-slate leading-relaxed">
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-white">Window Cleaning</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Crystal clear window cleaning for residential and commercial properties. 
                 Professional results that let the California sunshine through.
               </p>
             </div>
-            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800 hover:shadow-xl hover:border-blue-600 transition-all">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Gutter Cleaning</h4>
-              <p className="text-horizon-slate leading-relaxed">
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-white">Gutter Cleaning</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Thorough gutter cleaning and debris removal to protect your property from water damage. 
                 Essential maintenance for Northern California&#39;s wet season.
               </p>
             </div>
-            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800 hover:shadow-xl hover:border-blue-600 transition-all">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Junk Removal</h4>
-              <p className="text-horizon-slate leading-relaxed">
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-white">Junk Removal</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Fast and efficient junk removal services for homes and businesses. 
                 From single items to complete property cleanouts.
               </p>
             </div>
-            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800 hover:shadow-xl hover:border-blue-600 transition-all">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Moving Services</h4>
-              <p className="text-horizon-slate leading-relaxed">
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-white">Moving Services</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Reliable moving services for local relocations. 
                 Professional handling of your belongings with care and efficiency.
               </p>
             </div>
-            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800 hover:shadow-xl hover:border-blue-600 transition-all">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Tree Trimming</h4>
-              <p className="text-horizon-slate leading-relaxed">
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-white">Tree Trimming</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Professional tree trimming and pruning services. 
                 Keep your property safe and beautiful with proper tree maintenance.
               </p>
