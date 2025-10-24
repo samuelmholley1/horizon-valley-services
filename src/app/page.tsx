@@ -104,12 +104,12 @@ export default function Home() {
             </div>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-            Professional Exterior<br />
-            <span className="text-horizon-warm">Cleaning &amp; Maintenance</span>
+            Full-Service Property<br />
+            <span className="text-horizon-warm">Care &amp; Maintenance</span>
           </h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto text-gray-300 leading-relaxed">
-            Serving the heart of Northern California&#39;s wine country with reliable, professional exterior 
-            cleaning and maintenance services. Your trusted local experts in Ukiah and surrounding valleys.
+            Serving San Francisco, Marin, Sonoma, and Mendocino counties with comprehensive property services. 
+            From power washing to moving, we&#39;re your trusted local experts for all property care needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -136,21 +136,21 @@ export default function Home() {
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-horizon-black mb-6">Our Services</h3>
             <p className="text-lg text-horizon-slate max-w-2xl mx-auto leading-relaxed">
-              We provide comprehensive exterior cleaning and maintenance solutions for residential and commercial properties 
-              throughout Mendocino&#39;s beautiful valleys.
+              Comprehensive property services for residential and commercial clients across San Francisco, 
+              Marin, Sonoma, and Mendocino counties.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
                 <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Pressure Washing</h4>
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Power Washing</h4>
               <p className="text-horizon-slate leading-relaxed">
-                Professional pressure washing for driveways, sidewalks, decks, and building exteriors. 
-                Restoring the natural beauty of your property.
+                Professional power washing for driveways, sidewalks, decks, and building exteriors. 
+                Remove years of buildup and restore your property&#39;s appearance.
               </p>
             </div>
             <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
@@ -162,7 +162,7 @@ export default function Home() {
               <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Window Cleaning</h4>
               <p className="text-horizon-slate leading-relaxed">
                 Crystal clear window cleaning for residential and commercial properties. 
-                Let the Northern California sunshine in.
+                Professional results that let the California sunshine through.
               </p>
             </div>
             <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
@@ -171,10 +171,46 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                 </svg>
               </div>
-              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Exterior Maintenance</h4>
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Gutter Cleaning</h4>
               <p className="text-horizon-slate leading-relaxed">
-                Complete exterior maintenance including gutter cleaning and facility upkeep. 
-                Protecting your investment year-round.
+                Thorough gutter cleaning and debris removal to protect your property from water damage. 
+                Essential maintenance for Northern California&#39;s wet season.
+              </p>
+            </div>
+            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
+                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </div>
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Junk Removal</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                Fast and efficient junk removal services for homes and businesses. 
+                From single items to complete property cleanouts.
+              </p>
+            </div>
+            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
+                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                </svg>
+              </div>
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Moving Services</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                Reliable moving services for local relocations. 
+                Professional handling of your belongings with care and efficiency.
+              </p>
+            </div>
+            <div className="bg-horizon-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-horizon-black rounded-xl mb-6 flex items-center justify-center">
+                <svg className="w-8 h-8 text-horizon-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              </div>
+              <h4 className="text-2xl font-semibold mb-4 text-horizon-black">Tree Trimming</h4>
+              <p className="text-horizon-slate leading-relaxed">
+                Professional tree trimming and pruning services. 
+                Keep your property safe and beautiful with proper tree maintenance.
               </p>
             </div>
           </div>
@@ -188,7 +224,7 @@ export default function Home() {
             <h3 className="text-4xl font-bold text-horizon-black mb-6">Meet Our Team</h3>
             <p className="text-lg text-horizon-slate leading-relaxed">
               Founded and operated by four dedicated professionals committed to excellence and 
-              deeply rooted in the Mendocino community.
+              proudly serving the greater Bay Area and Northern California.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -218,20 +254,24 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
           <h3 className="text-4xl font-bold mb-6">Our Service Areas</h3>
           <p className="text-lg mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Proudly serving the beautiful valleys and communities throughout Northern California&#39;s wine country
+            Proudly serving the Bay Area and Northern California wine country communities
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-horizon-white/10 backdrop-blur-sm p-8 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
-              <h4 className="text-2xl font-semibold text-horizon-white mb-3">Mendocino County</h4>
-              <p className="text-gray-300">Ukiah, Willits, Fort Bragg and surrounding valleys</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+              <h4 className="text-2xl font-semibold text-horizon-white mb-3">San Francisco</h4>
+              <p className="text-gray-300">City and county coverage</p>
             </div>
-            <div className="bg-horizon-white/10 backdrop-blur-sm p-8 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
-              <h4 className="text-2xl font-semibold text-horizon-white mb-3">Lake County</h4>
-              <p className="text-gray-300">Lakeport, Clearlake, and complete county coverage</p>
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+              <h4 className="text-2xl font-semibold text-horizon-white mb-3">Marin County</h4>
+              <p className="text-gray-300">Sausalito, Mill Valley, San Rafael</p>
             </div>
-            <div className="bg-horizon-white/10 backdrop-blur-sm p-8 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
               <h4 className="text-2xl font-semibold text-horizon-white mb-3">Sonoma County</h4>
-              <p className="text-gray-300">Northern regions, Healdsburg, and beyond</p>
+              <p className="text-gray-300">Healdsburg, Santa Rosa, wine country</p>
+            </div>
+            <div className="bg-horizon-white/10 backdrop-blur-sm p-6 rounded-xl border border-horizon-white/20 hover:bg-horizon-white/20 transition-colors">
+              <h4 className="text-2xl font-semibold text-horizon-white mb-3">Mendocino County</h4>
+              <p className="text-gray-300">Ukiah, Willits, Fort Bragg</p>
             </div>
           </div>
         </div>
@@ -337,7 +377,7 @@ export default function Home() {
             "@id": "https://horizonvalleycleaning.com",
             "name": "Horizon Valley Services LLC",
             "image": "https://horizonvalleycleaning.com/HV_logo.jpeg",
-            "description": "Professional exterior cleaning and maintenance services serving Mendocino, Lake, and Sonoma counties in Northern California. Specializing in pressure washing, gutter cleaning, window washing, and property maintenance.",
+            "description": "Full-service property care and maintenance serving San Francisco, Marin, Sonoma, and Mendocino counties. Specializing in power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming.",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Ukiah",
@@ -356,8 +396,8 @@ export default function Home() {
             "priceRange": "$$",
             "areaServed": [
               {
-                "@type": "City",
-                "name": "Ukiah",
+                "@type": "AdministrativeArea",
+                "name": "San Francisco County",
                 "containedInPlace": {
                   "@type": "AdministrativeArea",
                   "name": "California"
@@ -365,15 +405,7 @@ export default function Home() {
               },
               {
                 "@type": "AdministrativeArea",
-                "name": "Mendocino County",
-                "containedInPlace": {
-                  "@type": "AdministrativeArea",
-                  "name": "California"
-                }
-              },
-              {
-                "@type": "AdministrativeArea",
-                "name": "Lake County",
+                "name": "Marin County",
                 "containedInPlace": {
                   "@type": "AdministrativeArea",
                   "name": "California"
@@ -382,6 +414,14 @@ export default function Home() {
               {
                 "@type": "AdministrativeArea",
                 "name": "Sonoma County",
+                "containedInPlace": {
+                  "@type": "AdministrativeArea",
+                  "name": "California"
+                }
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Mendocino County",
                 "containedInPlace": {
                   "@type": "AdministrativeArea",
                   "name": "California"
@@ -422,14 +462,22 @@ export default function Home() {
             ],
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Exterior Cleaning Services",
+              "name": "Property Services & Maintenance",
               "itemListElement": [
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Pressure Washing",
-                    "description": "Professional pressure washing for driveways, walkways, decks, and exterior surfaces"
+                    "name": "Power Washing",
+                    "description": "Professional power washing for driveways, walkways, decks, and exterior surfaces"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Window Cleaning",
+                    "description": "Crystal clear window cleaning for residential and commercial properties"
                   }
                 },
                 {
@@ -437,15 +485,31 @@ export default function Home() {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Gutter Cleaning",
-                    "description": "Thorough gutter cleaning and maintenance to protect your property"
+                    "description": "Thorough gutter cleaning and maintenance to protect your property from water damage"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Window Washing",
-                    "description": "Crystal clear window cleaning for residential and commercial properties"
+                    "name": "Junk Removal",
+                    "description": "Fast and efficient junk removal services for residential and commercial properties"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Moving Services",
+                    "description": "Reliable local moving services with professional handling"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tree Trimming",
+                    "description": "Professional tree trimming and pruning to maintain property safety and aesthetics"
                   }
                 }
               ]

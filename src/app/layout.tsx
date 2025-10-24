@@ -6,9 +6,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Horizon Valley Services LLC - Professional Exterior Cleaning & Maintenance | Ukiah, CA',
-  description: 'Professional exterior cleaning and maintenance services serving Mendocino, Lake, and Sonoma counties. Expert pressure washing, gutter cleaning, window washing, and property maintenance. Local, reliable service in Northern California wine country. Call (559) 960-2749 for a free quote.',
-  keywords: 'exterior cleaning, pressure washing, gutter cleaning, window washing, property maintenance, Ukiah CA, Mendocino County, Lake County, Sonoma County, Northern California, wine country services, residential cleaning, commercial cleaning',
+  title: 'Horizon Valley Services LLC - Full-Service Property Care & Maintenance | Bay Area',
+  description: 'Comprehensive property services serving San Francisco, Marin, Sonoma, and Mendocino counties. Expert power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming. Local, reliable service throughout the Bay Area and Northern California. Call (559) 960-2749 for a free quote.',
+  keywords: 'property services, power washing, window cleaning, gutter cleaning, junk removal, moving services, tree trimming, San Francisco, Marin County, Sonoma County, Mendocino County, Bay Area services, Northern California, wine country, residential services, commercial services',
   authors: [{ name: 'Horizon Valley Services LLC' }],
   creator: 'Horizon Valley Services LLC',
   publisher: 'Horizon Valley Services LLC',
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Horizon Valley Services LLC - Exterior Cleaning & Maintenance',
-    description: 'Professional exterior cleaning services serving Mendocino, Lake, and Sonoma counties. Pressure washing, gutter cleaning, window washing, and more. Local experts you can trust.',
+    title: 'Horizon Valley Services LLC - Full-Service Property Care',
+    description: 'Comprehensive property services serving San Francisco, Marin, Sonoma, and Mendocino counties. Power washing, window cleaning, gutter cleaning, junk removal, moving, and tree trimming.',
     url: 'https://horizonvalleycleaning.com',
     siteName: 'Horizon Valley Services LLC',
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Horizon Valley Services LLC - Exterior Cleaning Experts',
-    description: 'Professional exterior cleaning and maintenance serving Northern California wine country. Call (559) 960-2749 for a free quote.',
+    title: 'Horizon Valley Services LLC - Full-Service Property Care',
+    description: 'Power washing, window cleaning, gutter cleaning, junk removal, moving, and tree trimming serving the Bay Area and Northern California. Call (559) 960-2749 for a free quote.',
     images: ['/HV_logo.jpeg'],
   },
   robots: {

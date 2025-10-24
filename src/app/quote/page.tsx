@@ -260,10 +260,12 @@ export default function QuotePage() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-horizon-black focus:border-transparent transition bg-white"
                   >
                     <option value="">Select a service</option>
-                    <option value="pressure-washing">Pressure Washing</option>
+                    <option value="power-washing">Power Washing</option>
+                    <option value="window-cleaning">Window Cleaning</option>
                     <option value="gutter-cleaning">Gutter Cleaning</option>
-                    <option value="window-washing">Window Washing</option>
-                    <option value="deck-maintenance">Deck Maintenance</option>
+                    <option value="junk-removal">Junk Removal</option>
+                    <option value="moving">Moving Services</option>
+                    <option value="tree-trimming">Tree Trimming</option>
                     <option value="multiple">Multiple Services</option>
                     <option value="other">Other</option>
                   </select>
