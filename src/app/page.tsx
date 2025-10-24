@@ -276,8 +276,8 @@ export default function Home() {
               <p className="text-gray-400 text-xs">Ukiah, Willits, Fort Bragg, Mendocino, Point Arena</p>
             </div>
           </div>
-          <div className="text-center mt-10">
-            <p className="text-gray-400 text-sm">Don&apos;t see your city? <a href="tel:707-972-4525</a> - we likely serve your area!</p>
+          <div className="mt-8 text-center">
+            <p className="text-gray-400 text-sm">Don&apos;t see your city? <a href="tel:7079724525" className="text-blue-400 hover:underline">(707) 972-4525</a> - we likely serve your area!</p>
           </div>
         </div>
       </section>
@@ -367,48 +367,48 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-horizon-warm">
+      <section className="py-20 bg-horizon-charcoal">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-horizon-black mb-6">Frequently Asked Questions</h3>
-            <p className="text-lg text-horizon-slate leading-relaxed">
+            <h3 className="text-4xl font-bold text-horizon-white mb-6">Frequently Asked Questions</h3>
+            <p className="text-lg text-gray-300 leading-relaxed">
               Quick answers to common questions about our services
             </p>
           </div>
           <div className="space-y-6">
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
-              <h4 className="text-xl font-semibold text-horizon-black mb-3">What areas do you serve?</h4>
-              <p className="text-horizon-slate leading-relaxed">
-                We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties. If you&#39;re unsure whether we cover your area, give us a call at (707-972-4525 and we&#39;ll let you know!
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
+              <h4 className="text-xl font-semibold text-horizon-white mb-3">What areas do you serve?</h4>
+              <p className="text-gray-400 leading-relaxed">
+                We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties. If you&#39;re unsure whether we cover your area, give us a call at <a href="tel:707-972-4525" className="text-blue-400 hover:underline">(707) 972-4525</a> and we&#39;ll let you know!
               </p>
             </div>
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
-              <h4 className="text-xl font-semibold text-horizon-black mb-3">Do you offer free estimates?</h4>
-              <p className="text-horizon-slate leading-relaxed">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
+              <h4 className="text-xl font-semibold text-horizon-white mb-3">Do you offer free estimates?</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Yes! We provide free, no-obligation quotes for all our services. You can schedule a consultation through our website or call us directly.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-              <h4 className="text-xl font-semibold text-horizon-black mb-3">What safety measures do you follow?</h4>
-              <p className="text-horizon-slate leading-relaxed">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
+              <h4 className="text-xl font-semibold text-horizon-white mb-3">What safety measures do you follow?</h4>
+              <p className="text-gray-400 leading-relaxed">
                 We prioritize safety and professionalism on every job. Our team follows industry best practices and takes care to protect your property throughout the service process.
               </p>
             </div>
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
-              <h4 className="text-xl font-semibold text-horizon-black mb-3">What payment methods do you accept?</h4>
-              <p className="text-horizon-slate leading-relaxed">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
+              <h4 className="text-xl font-semibold text-horizon-white mb-3">What payment methods do you accept?</h4>
+              <p className="text-gray-400 leading-relaxed">
                 We accept cash, checks, and all major credit cards for your convenience. Payment is typically due upon completion of service.
               </p>
             </div>
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
-              <h4 className="text-xl font-semibold text-horizon-black mb-3">How quickly can you start a project?</h4>
-              <p className="text-horizon-slate leading-relaxed">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
+              <h4 className="text-xl font-semibold text-horizon-white mb-3">How quickly can you start a project?</h4>
+              <p className="text-gray-400 leading-relaxed">
                 Most projects can be scheduled within a few days to a week, depending on our current workload and the scope of your project. For urgent needs, we do our best to accommodate same-day or next-day service.
               </p>
             </div>
-            <div className="bg-horizon-white p-6 rounded-xl shadow-md border border-gray-100">
-              <h4 className="text-xl font-semibold text-horizon-black mb-3">Do I need to be home during the service?</h4>
-              <p className="text-horizon-slate leading-relaxed">
+            <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
+              <h4 className="text-xl font-semibold text-horizon-white mb-3">Do I need to be home during the service?</h4>
+              <p className="text-gray-400 leading-relaxed">
                 For most exterior services like power washing, gutter cleaning, and tree trimming, you don&#39;t need to be present. For moving services or interior work, we&#39;ll coordinate access with you.
               </p>
             </div>
@@ -436,7 +436,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-horizon-black font-medium">Call for quote</p>
-                    <a href="tel:707-972-4525</a>
+                    <a href="tel:7079724525" className="text-horizon-slate hover:text-horizon-black transition-colors">(707) 972-4525</a>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -516,7 +516,7 @@ export default function Home() {
             <div className="text-center md:text-right">
               <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
               <div className="space-y-2 text-gray-400 text-sm">
-                <p><a href="tel:707-972-4525</a></p>
+                <p><a href="tel:7079724525" className="hover:text-horizon-white transition-colors">(707) 972-4525</a></p>
                 <p><a href="mailto:owners@horizonvalleycleaning.com" className="hover:text-horizon-white transition-colors">owners@horizonvalleycleaning.com</a></p>
                 <p className="mt-4 pt-4 border-t border-gray-600">
                   <Link href="/privacy" className="hover:text-horizon-white transition-colors">Privacy Policy</Link>

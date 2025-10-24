@@ -360,7 +360,7 @@ export default function QuotePage() {
               </button>
 
               <p className="text-sm text-horizon-slate text-center">
-                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:707-972-4525</a>
+                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:7079724525" className="text-horizon-black hover:underline">(707) 972-4525</a>
               </p>
             </form>
           </div>
