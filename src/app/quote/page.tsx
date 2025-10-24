@@ -63,12 +63,30 @@ export default function QuotePage() {
     setErrors({});
     
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      setSubmitSuccess(true);
+      // Submit to API
+      const response = await fetch('/api/submit-quote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          submittedAt: new Date().toISOString(),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setSubmitSuccess(true);
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
     } catch (error) {
-      setErrors({ submit: "Something went wrong. Please try again or call us at (707) 972-4525." });
+      console.error('Form submission error:', error);
+      setErrors({ 
+        submit: "Something went wrong. Please try again or call us at (707) 972-4525." 
+      });
     } finally {
       setIsSubmitting(false);
     }

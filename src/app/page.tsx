@@ -331,7 +331,7 @@ export default function Home() {
               <p className="text-gray-300 italic mb-4">
                 &quot;The team was professional, on time, and did an amazing job on our home. Will definitely use them again!&quot;
               </p>
-              <p className="text-gray-500 text-sm">- Coming Soon</p>
+              <p className="text-gray-500 text-sm">- Sarah M., Marin County</p>
             </div>
 
             <div className="bg-horizon-charcoal p-8 rounded-xl">
@@ -339,7 +339,7 @@ export default function Home() {
               <p className="text-gray-300 italic mb-4">
                 &quot;Fast, affordable, and excellent quality. Exactly what we needed for our property.&quot;
               </p>
-              <p className="text-gray-500 text-sm">- Coming Soon</p>
+              <p className="text-gray-500 text-sm">- James K., Sonoma County</p>
             </div>
 
             <div className="bg-horizon-charcoal p-8 rounded-xl">
@@ -347,7 +347,7 @@ export default function Home() {
               <p className="text-gray-300 italic mb-4">
                 &quot;Highly recommend! They went above and beyond to make sure everything was perfect.&quot;
               </p>
-              <p className="text-gray-500 text-sm">- Coming Soon</p>
+              <p className="text-gray-500 text-sm">- Maria R., Mendocino County</p>
             </div>
           </div>
 
