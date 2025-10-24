@@ -186,40 +186,18 @@ export default function QuotePage() {
               </p>
             </div>
             
-            {/* Calendly Embed Placeholder */}
-            <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-12 text-center">
-              <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p className="text-gray-600 mb-4">
-                <strong>Calendly widget will appear here</strong>
+            {/* Calendly Embed - Live Widget */}
+            <div 
+              className="calendly-inline-widget" 
+              data-url="https://calendly.com/owners-horizonvalleycleaning/30min?hide_event_type_details=1&hide_gdpr_banner=1" 
+              style={{ minWidth: '320px', height: '700px' }}
+            />
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            
+            <div className="mt-6 text-center">
+              <p className="text-sm text-horizon-slate">
+                Can&#39;t find a time that works? <a href="tel:559-960-2749" className="font-semibold text-horizon-black hover:underline">Call us directly at (559) 960-2749</a>
               </p>
-              <p className="text-sm text-gray-500 mb-6">
-                Add your Calendly embed code to activate online scheduling
-              </p>
-              <div className="text-left bg-gray-100 p-4 rounded text-xs font-mono text-gray-700 max-w-2xl mx-auto">
-                {`<!-- Replace this section with your Calendly embed code -->
-<!-- Example: -->
-<!-- <div className="calendly-inline-widget" 
-     data-url="https://calendly.com/your-link"
-     style={{ minWidth: '320px', height: '700px' }}></div>
-<script type="text/javascript" 
-     src="https://assets.calendly.com/assets/external/widget.js" 
-     async></script> -->`}
-              </div>
-            </div>
-
-            {/* Quick Call Option */}
-            <div className="mt-8 text-center">
-              <p className="text-horizon-slate mb-4">
-                Prefer to talk now?
-              </p>
-              <a 
-                href="tel:559-960-2749"
-                className="inline-block bg-horizon-black text-horizon-white px-8 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition duration-300"
-              >
-                Call (559) 960-2749 Now
-              </a>
             </div>
           </div>
         </div>
