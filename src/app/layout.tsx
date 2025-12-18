@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import CookieConsent from '@/components/CookieConsent'
+import StructuredData from '@/components/StructuredData'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -66,8 +67,7 @@ export const metadata: Metadata = {
     ],
   },
   verification: {
-    // Add Google Search Console verification here when available
-    // google: 'your-verification-code',
+    google: 'google428d2510fe1ea89d',
   },
 }
 
@@ -83,6 +83,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/HV_icon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <StructuredData />
       </head>
       <body className={inter.className}>
         {children}

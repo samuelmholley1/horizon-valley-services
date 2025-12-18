@@ -22,10 +22,10 @@ export default function Home() {
               />
             </div>
           </div>
-          <h2 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-horizon-white">
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-horizon-white">
             Full-Service Property<br />
             <span className="text-blue-400">Care &amp; Maintenance</span>
-          </h2>
+          </h1>
           <p className="text-xl mb-6 max-w-3xl mx-auto text-gray-300 leading-relaxed">
             Professional power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming serving San Francisco, Marin, Sonoma, and Mendocino counties.
           </p>
