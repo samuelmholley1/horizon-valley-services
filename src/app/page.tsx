@@ -45,10 +45,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:707-972-4525" 
+              href="tel:559-960-2749" 
               className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-600/50 text-center"
             >
-              📞 Call Now - (707) 972-4525
+              📞 Call Now - (559) 960-2749
             </a>
             <Link
               href="/quote"
@@ -277,7 +277,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <p className="text-gray-400 text-sm">Don&apos;t see your city? <a href="tel:7079724525" className="text-blue-400 hover:underline">(707) 972-4525</a> - we likely serve your area!</p>
+            <p className="text-gray-400 text-sm">Don&apos;t see your city? <a href="tel:5599602749" className="text-blue-400 hover:underline">(559) 960-2749</a> - we likely serve your area!</p>
           </div>
         </div>
       </section>
@@ -357,10 +357,10 @@ export default function Home() {
               Join our growing list of satisfied customers across San Francisco, Marin, Sonoma, and Mendocino counties
             </p>
             <a 
-              href="tel:707-972-4525" 
+              href="tel:559-960-2749" 
               className="inline-block bg-horizon-black text-horizon-white px-8 py-3 rounded-lg font-semibold hover:bg-horizon-charcoal transition-colors"
             >
-              Call (707) 972-4525 Now
+              Call (559) 960-2749 Now
             </a>
           </div>
         </div>
@@ -379,7 +379,7 @@ export default function Home() {
             <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
               <h4 className="text-xl font-semibold text-horizon-white mb-3">What areas do you serve?</h4>
               <p className="text-gray-400 leading-relaxed">
-                We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties. If you&#39;re unsure whether we cover your area, give us a call at <a href="tel:707-972-4525" className="text-blue-400 hover:underline">(707) 972-4525</a> and we&#39;ll let you know!
+                We proudly serve San Francisco, Marin, Sonoma, and Mendocino counties. If you&#39;re unsure whether we cover your area, give us a call at <a href="tel:559-960-2749" className="text-blue-400 hover:underline">(559) 960-2749</a> and we&#39;ll let you know!
               </p>
             </div>
             <div className="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-800 hover:border-blue-600 transition-all">
@@ -436,7 +436,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-horizon-white font-medium">Call for quote</p>
-                    <a href="tel:7079724525" className="text-blue-400 hover:underline transition-colors">(707) 972-4525</a>
+                    <a href="tel:5599602749" className="text-blue-400 hover:underline transition-colors">(559) 960-2749</a>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -471,10 +471,10 @@ export default function Home() {
                 We provide free consultations and competitive pricing for all our services.
               </p>
               <a 
-                href="tel:7079724525"
+                href="tel:5599602749"
                 className="block w-full bg-blue-600 text-horizon-white px-6 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-600/30 text-center"
               >
-                Call (707) 972-4525 for Quote
+                Call (559) 960-2749 for Quote
               </a>
             </div>
           </div>
@@ -506,7 +506,7 @@ export default function Home() {
               "latitude": 39.1502,
               "longitude": -123.2078
             },
-            "telephone": "+1707-972-4525",
+            "telephone": "+1559-960-2749",
             "email": "owners@horizonvalleycleaning.com",
             "url": "https://horizonvalleycleaning.com",
             "priceRange": "$$",
@@ -655,7 +655,7 @@ export default function Home() {
                 "name": "Do you provide free estimates?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! We offer free, no-obligation estimates for all our services. You can request a quote online or call us at (707) 972-4525."
+                  "text": "Yes! We offer free, no-obligation estimates for all our services. You can request a quote online or call us at (559) 960-2749."
                 }
               },
               {

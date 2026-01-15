@@ -17,7 +17,7 @@ export default function StructuredData() {
     },
     "image": "https://horizonvalleycleaning.com/HV_logo.png",
     "description": "Comprehensive property services serving San Francisco, Marin, Sonoma, and Mendocino counties. Expert power washing, window cleaning, gutter cleaning, junk removal, moving services, and tree trimming.",
-    "telephone": "+1-707-972-4525",
+    "telephone": "+1-559-960-2749",
     "email": "contact@horizonvalleycleaning.com",
     "address": {
       "@type": "PostalAddress",

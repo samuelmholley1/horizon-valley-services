@@ -61,10 +61,10 @@ export default function NotFound() {
             <strong>Need immediate assistance?</strong>
           </p>
           <a 
-            href="tel:707-972-4525" 
+            href="tel:559-960-2749" 
             className="text-horizon-black font-bold text-lg hover:underline"
           >
-            Call (707) 972-4525
+            Call (559) 960-2749
           </a>
         </div>
       </div>

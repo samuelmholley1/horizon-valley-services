@@ -27,7 +27,7 @@ export default function SanFranciscoPage() {
             image: 'https://horizonvalleycleaning.com/logo.png',
             '@id': 'https://horizonvalleycleaning.com/areas/san-francisco',
             url: 'https://horizonvalleycleaning.com/areas/san-francisco',
-            telephone: '(707) 972-4525',
+            telephone: '(559) 960-2749',
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'San Francisco',
@@ -93,10 +93,10 @@ export default function SanFranciscoPage() {
               Get Free Quote in SF County →
             </Link>
             <a 
-              href="tel:707-972-4525"
-              className="bg-horizon-white hover:bg-gray-100 text-horizon-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center"
+              href="tel:559-960-2749"
+              className="bg-horizon-white hover:bg-gray-100 text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center"
             >
-              📞 Call (707) 972-4525
+              📞 Call (559) 960-2749
             </a>
           </div>
 
@@ -264,10 +264,10 @@ export default function SanFranciscoPage() {
 
           <div className="mt-12">
             <a 
-              href="tel:707-972-4525"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors"
+              href="tel:559-960-2749"
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors"
             >
-              Call Now for SF County Service: (707) 972-4525
+              Call Now for SF County Service: (559) 960-2749
             </a>
           </div>
         </div>
@@ -295,7 +295,7 @@ export default function SanFranciscoPage() {
                 How quickly can you service my SF property?
               </h3>
               <p className="text-horizon-slate">
-                We offer same-week service for most San Francisco County locations. Call us at (707) 972-4525 and we&apos;ll check our schedule for your area.
+                We offer same-week service for most San Francisco County locations. Call us at (559) 960-2749 and we&apos;ll check our schedule for your area.
               </p>
             </div>
 
@@ -337,10 +337,10 @@ export default function SanFranciscoPage() {
               Get Free SF Quote →
             </Link>
             <a 
-              href="tel:707-972-4525"
+              href="tel:559-960-2749"
               className="bg-blue-900 hover:bg-blue-950 text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors border-2 border-white"
             >
-              📞 (707) 972-4525
+              📞 (559) 960-2749
             </a>
           </div>
           <p className="mt-8 text-sm text-blue-200">

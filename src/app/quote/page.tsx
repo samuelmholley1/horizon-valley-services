@@ -142,7 +142,7 @@ export default function QuotePage() {
     } catch (error) {
       console.error('Form submission error:', error);
       setErrors({ 
-        submit: "Something went wrong. Please try again or call us at (707) 972-4525." 
+        submit: "Something went wrong. Please try again or call us at (559) 960-2749." 
       });
     } finally {
       setIsSubmitting(false);
@@ -178,8 +178,8 @@ export default function QuotePage() {
               <div className="space-y-4">
                 <p className="text-gray-400">
                   Need immediate assistance?<br />
-                  <a href="tel:7079724525" className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                    (707) 972-4525
+                  <a href="tel:5599602749" className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
+                    (559) 960-2749
                   </a>
                 </p>
                 <Link 
@@ -351,7 +351,7 @@ export default function QuotePage() {
             
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-400">
-                Can&#39;t find a time that works? <a href="tel:7079724525" className="font-semibold text-blue-400 hover:underline">Call us at (707) 972-4525</a>
+                Can&#39;t find a time that works? <a href="tel:5599602749" className="font-semibold text-blue-400 hover:underline">Call us at (559) 960-2749</a>
               </p>
             </div>
           </div>
@@ -369,7 +369,7 @@ export default function QuotePage() {
               We recommend scheduling a consultation above for the fastest response
             </p>
             <p className="text-sm text-gray-400 mt-3 italic">
-              Online form coming soon - Or call us directly at <a href="tel:7079724525" className="text-blue-400 hover:underline font-semibold">(707) 972-4525</a>
+              Online form coming soon - Or call us directly at <a href="tel:5599602749" className="text-blue-400 hover:underline font-semibold">(559) 960-2749</a>
             </p>
           </div>
 
@@ -526,7 +526,7 @@ export default function QuotePage() {
               </button>
 
               <p className="text-sm text-gray-400 text-center">
-                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:7079724525" className="text-blue-400 hover:underline">(707) 972-4525</a>
+                We&#39;ll respond within 24 hours. For immediate assistance, call <a href="tel:5599602749" className="text-blue-400 hover:underline">(559) 960-2749</a>
               </p>
             </form>
           </div>

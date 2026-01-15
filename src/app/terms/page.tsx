@@ -113,7 +113,7 @@ export default function TermsPage() {
             </p>
             <div className="space-y-2 text-gray-300">
               <p><strong>Email:</strong> <a href="mailto:owners@horizonvalleycleaning.com" className="text-blue-400 hover:underline">owners@horizonvalleycleaning.com</a></p>
-              <p><strong>Phone:</strong> <a href="tel:7079724525" className="text-blue-400 hover:underline">(707) 972-4525</a></p>
+              <p><strong>Phone:</strong> <a href="tel:5599602749" className="text-blue-400 hover:underline">(559) 960-2749</a></p>
               <p><strong>Address:</strong> Ukiah, CA 95482</p>
             </div>
           </div>
