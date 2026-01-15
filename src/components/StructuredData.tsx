@@ -94,15 +94,7 @@ export default function StructuredData() {
       },
       {
         "@type": "Person",
-        "name": "Treyton Scott"
-      },
-      {
-        "@type": "Person",
         "name": "Caleb White"
-      },
-      {
-        "@type": "Person",
-        "name": "Hudson Ford"
       }
     ],
     "sameAs": [

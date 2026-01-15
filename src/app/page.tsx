@@ -79,7 +79,7 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="font-bold text-lg text-horizon-white mb-2">Family Owned & Operated</h4>
-              <p className="text-sm text-gray-400">Local business run by 4 partners who care about our community and your satisfaction.</p>
+              <p className="text-sm text-gray-400">Local business run by 2 brothers who care about our community and your satisfaction.</p>
             </div>
 
             <div className="bg-gray-900 p-6 rounded-xl shadow-md border-2 border-gray-800 hover:border-blue-600 transition-all">
@@ -220,16 +220,14 @@ export default function Home() {
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-horizon-white mb-6">Meet Our Team</h3>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Founded and operated by four dedicated professionals committed to excellence and 
+              Founded and operated by two brothers committed to excellence and 
               proudly serving the greater Bay Area and Northern California.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {[
-              { name: 'Cody White', role: 'Co-Founder & Operations' },
-              { name: 'Treyton Scott', role: 'Co-Founder & Quality' },
-              { name: 'Caleb White', role: 'Co-Founder & Services' },
-              { name: 'Hudson Ford', role: 'Co-Founder & Client Relations' },
+              { name: 'Cody White', role: 'Co-Founder' },
+              { name: 'Caleb White', role: 'Co-Founder' },
             ].map((member) => (
               <div key={member.name} className="text-center bg-gray-900 p-6 rounded-xl shadow-lg border-2 border-gray-800 hover:border-blue-600 transition-all">
                 <div className="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg shadow-blue-600/30">
@@ -565,15 +563,7 @@ export default function Home() {
               },
               {
                 "@type": "Person",
-                "name": "Treyton Scott"
-              },
-              {
-                "@type": "Person",
                 "name": "Caleb White"
-              },
-              {
-                "@type": "Person",
-                "name": "Hudson Ford"
               }
             ],
             "hasOfferCatalog": {

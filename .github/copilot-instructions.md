@@ -7,7 +7,7 @@ This is a Next.js React landing page for Horizon Valley Services LLC, a local cl
 - **Industry**: Exterior cleaning and maintenance services
 - **Location**: Ukiah, CA
 - **Service Areas**: Mendocino, Lake, and Sonoma counties
-- **Co-founders**: Cody White, Treyton Scott, Caleb White, Hudson Ford
+- **Co-founders**: Cody White (brother), Caleb White (brother)
 
 ## Tech Stack
 - **Framework**: Next.js with React
@@ -31,7 +31,7 @@ This is a Next.js React landing page for Horizon Valley Services LLC, a local cl
 ## Key Features to Include
 - Hero section with company value proposition
 - Services overview (exterior cleaning, maintenance)
-- Team/founders section featuring the 4 co-founders
+- Team/founders section featuring the 2 brother co-founders
 - Service area information (Mendo, Lake, Sonoma counties)
 - Contact information and call-to-action
 - Professional, trustworthy design aesthetic
